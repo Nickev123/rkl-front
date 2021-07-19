@@ -11,7 +11,7 @@ const Team = () => (
         className="mt-4 mb-16 mr-8 flex flex-col justify-between text-center xl:text-left"
         data-aos="fade"
       >
-        <h2 className="font-serif mb-3 text-3xl text-yellowColor">The Team</h2>
+        <h2 className="font-sans mb-3 text-3xl text-yellowColor">The Team</h2>
         <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center xl:self-start"></div>
         <h4 className="font-sans text-white text-xl">
           Meet the team bringing you the rumble
@@ -33,7 +33,7 @@ const Team = () => (
             width="164"
             height="164"
           />
-          <div className="font-serif text-xl mt-6 text-yellowColor2">
+          <div className="font-sans text-xl mt-6 text-yellowColor2">
             direkkt
           </div>
           <span className="text-white font-semibold text-sm w-64 mx-auto">
@@ -79,7 +79,7 @@ const Team = () => (
             width="164"
             height="164"
           />
-          <div className="font-serif text-xl mt-6 text-yellowColor2">
+          <div className="font-sans text-xl mt-6 text-yellowColor2">
             Sickpencil
           </div>
           <span className="text-white font-semibold text-sm w-64 mx-auto">
@@ -125,7 +125,7 @@ const Team = () => (
             width="164"
             height="164"
           />
-          <div className="font-serif text-xl mt-6 text-yellowColor2">Naz</div>
+          <div className="font-sans text-xl mt-6 text-yellowColor2">Naz</div>
           <span className="text-white font-semibold text-sm w-64 mx-auto">
             Tech
           </span>
@@ -169,9 +169,7 @@ const Team = () => (
             width="164"
             height="164"
           />
-          <div className="font-serif text-xl mt-6 text-yellowColor2">
-            Nickev
-          </div>
+          <div className="font-sans text-xl mt-6 text-yellowColor2">Nickev</div>
           <span className="text-white font-semibold text-sm w-64 mx-auto">
             Marketing
           </span>

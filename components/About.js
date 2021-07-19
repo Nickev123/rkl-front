@@ -16,7 +16,7 @@ const About = () => (
     >
       <div className="w-auto lg:w-max flex flex-col justify-center ml-auto px-2 sm:px-20 h-full text-yellowColor">
         <h1
-          className="font-serif mb-4 mt-8 2xs:mt-0"
+          className="font-sans mb-4 mt-8 2xs:mt-0"
           style={{ fontSize: "calc(8px + 4.2vw)" }}
         >
           RUMBLE KONG LEAGUE

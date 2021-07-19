@@ -7,7 +7,7 @@ const Overlay = () => (
     {/* Overlay Content */}
     <h2 className="font-sans mb-3 text-7xl">HEADER</h2>
     <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center"></div>
-    <h4 className="font-serif text-grayColor2 text-xl w-3/4 sm:w-1/2">
+    <h4 className="font-sans text-grayColor2 text-xl w-3/4 sm:w-1/2">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -15,7 +15,7 @@ const Overlay = () => (
     </h4>
 
     {/* Minted Count */}
-    <div className="font-serif my-12 text-4xl">2.777 / 1000 Minted</div>
+    <div className="font-sans my-12 text-4xl">2.777 / 1000 Minted</div>
 
     {/* Buttons */}
     <div className="flex flex-wrap sm:flex-nowrap justify-center">

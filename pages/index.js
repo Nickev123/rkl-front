@@ -12,6 +12,7 @@ import Footer from "../components/Footer";
 const Index = () => (
   <>
     <Head>
+      <link href="http://fonts.cdnfonts.com/css/strasua" rel="stylesheet" />
       <title>RUMBLE KONG LEAGUE</title>
     </Head>
 

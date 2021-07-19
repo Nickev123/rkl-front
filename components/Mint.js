@@ -16,11 +16,11 @@ const Mint = () => (
     >
       <div className="my-8 mr-8 flex flex-col justify-between">
         <div>
-          <h2 className="font-serif mb-3 text-3xl text-yellowColor">
+          <h2 className="font-sans mb-3 text-3xl text-yellowColor">
             Let&#39;s get ready to rumble
           </h2>
           <div className="w-20 h-0.5 bg-yellowColor mb-4"></div>
-          <h4 className="font-serif text-white text-xl">
+          <h4 className="font-sans text-white text-xl">
             Rumble Kong League is a competitive 3 vs 3 basketball experience,
             combining play-to-earn functionality with NFT Collection mechanics,
             enabling users to compete in engaging ways through NFTs. Launching
@@ -88,11 +88,11 @@ const Mint = () => (
 
       <div className="my-8 flex flex-col justify-between w-auto lg:w-1/2">
         <div className="ml-8">
-          <h2 className="font-serif mb-3 text-3xl text-yellowColor">
+          <h2 className="font-sans mb-3 text-3xl text-yellowColor">
             Quality is dope
           </h2>
           <div className="w-20 h-0.5 bg-yellowColor mb-4"></div>
-          <h4 className="font-serif text-white text-xl">
+          <h4 className="font-sans text-white text-xl">
             Each Kong is assembled from a set of 100+ carefully hand-drawn
             traits by known NFT artist sickpencil, who has made a name for
             himself through his unique art style and various high-quality

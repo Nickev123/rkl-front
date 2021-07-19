@@ -4,10 +4,9 @@
 @tailwind utilities;
 
 @layer base {
-
   /* Import Fonts */
-  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@300;400;600;700&display=swap');
-  
+  @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Serif+Pro:wght@300;400;600;700&display=swap");
+
   /* Global Styles */
   html {
     @apply overflow-x-hidden text-white;
@@ -20,7 +19,7 @@
     background-color: black;
   }
 
-  img{
+  img {
     @apply max-w-full select-none;
     -webkit-user-drag: none;
     user-drag: none;
@@ -28,9 +27,8 @@
   }
 }
 
-
 @layer components {
-  .yellow-button{
+  .yellow-button {
     @apply h-8 sm:h-12 w-24 sm:w-36 bg-yellowColor text-black font-semibold text-sm sm:text-xl;
   }
 }
