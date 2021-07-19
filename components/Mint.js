@@ -82,10 +82,10 @@ const Mint = () => (
           <h2 className="font-serif mb-3 text-3xl">Quality is dope</h2>
           <div className="w-20 h-0.5 bg-yellowColor mb-4"></div>
           <h4 className="font-serif text-grayColor2 text-xl">
-            Look for yourself. Now imagine that these also bring "Play to Earn"
-            mechanic on top of looking like you won't be ashamed to show this to
-            your grandchildren. Now this is a kong that has a healthy diet and
-            can take on any foe!
+            Look for yourself. Now imagine that these also bring &quot;Play to
+            Earn&quot; mechanic on top of looking like you won&apos;t be ashamed
+            to show this to your grandchildren. Now this is a kong that has a
+            healthy diet and can take on any foe!
             <br />
             <br />
             These are alpha kongs!
