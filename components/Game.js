@@ -14,24 +14,34 @@ const Game = () => (
         className="mt-8 mb-8 0xl:mb-36 mr-8 flex flex-col justify-between text-center"
         data-aos="fade"
       >
-        <h2 className="font-serif mb-3 text-3xl">The Game</h2>
+        <h2 className="font-serif mb-3 text-3xl text-yellowColor">The Game</h2>
         <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center"></div>
-        <h4 className="font-serif text-grayColor2 text-xl">
-          Game is a 3v3 kong rumble. The mechanics allow for cleverly combining
-          your cards together for best chance of winning the game.
+        <h4 className="font-serif text-white text-xl">
+          The core gameplay of the Rumble Kong League will evolve around
+          exciting 3 versus 3 basketball matches, combining proven gameplay and
+          play-to-earn mechanics. Compete with and against other real users and
+          their NFTs in various leagues and compete for a range of rewards and
+          become the best of your class. In order to participate in Leagues,
+          users will need to be member of Clubs, a seperate layer of the
+          ecosystem, giving users the chance to be the coach of their own team
+          and find the best possible team to win the cup.
           <br />
           <br />
-          RKL team will be organising seasonal play offs where the teams will
-          participate to win prizes. The game will be designed in such a way
-          that even the kongs with lower stats have a chance at winning.
+          The initial drop of 10.000 Kongs will help funding of the project,
+          planned to be released later in 2021 globally.
           <br />
           <br />
-          Levelling mechanics are present. Winning streaks influence the game.
+          The Kongs will always be at the heart of the Rumble Kong League,
+          however in the future it is our vision to open the league up to other
+          NFT Collections, giving NFT interoperability a new meaning and
+          offering new ways to use NFTs to anyone. We are already in discussion
+          with multiple known NFT Collections, some of which will be announced
+          in the coming weeks.
         </h4>
       </div>
 
       {/* Game Images */}
-      <div className="flex text-center justify-center xl:justify-between flex-wrap mb-12">
+      {/* <div className="flex text-center justify-center xl:justify-between flex-wrap mb-12">
         <div
           className="mr-4 mb-4"
           data-aos="fade-right"
@@ -98,17 +108,17 @@ const Game = () => (
           <div className="font-semibold my-2">DOMINATE</div>
           <p className="text-grayColor2 w-64 mx-auto">This is a text</p>
         </div>
-      </div>
+      </div> */}
 
       {/* Large Game Image */}
-      <Image
+      {/* <Image
         className="mx-auto"
         src="/assets/game/monkey2.png"
         alt="Game Image"
         width="1088"
         height="590"
         data-aos="fade"
-      />
+      /> */}
     </div>
 
     {/* White Seperator */}

@@ -53,20 +53,20 @@ const Footer = () => (
 
       {/* Social Links */}
       <div className="flex justify-center">
-        <a className="mr-px" href="#">
+        <a className="mr-4" href="#">
           <Image
-            src="/assets/footer/discord.png"
+            src="/assets/footer/discord.jpg"
             alt="Discord"
-            width="48"
-            height="48"
+            width="32"
+            height="32"
           />
         </a>
         <a href="#">
           <Image
             src="/assets/footer/twitter.png"
             alt="Twitter"
-            width="48"
-            height="48"
+            width="32"
+            height="32"
           />
         </a>
       </div>

@@ -11,10 +11,10 @@ const Team = () => (
         className="mt-4 mb-16 mr-8 flex flex-col justify-between text-center xl:text-left"
         data-aos="fade"
       >
-        <h2 className="font-serif mb-3 text-3xl">The Team</h2>
+        <h2 className="font-serif mb-3 text-3xl text-yellowColor">The Team</h2>
         <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center xl:self-start"></div>
-        <h4 className="font-sans text-grayColor2 text-xl">
-          Meet the team bringing you the rumble.
+        <h4 className="font-sans text-white text-xl">
+          Meet the team bringing you the rumble
         </h4>
       </div>
 
@@ -33,12 +33,18 @@ const Team = () => (
             width="164"
             height="164"
           />
-          <div className="font-serif text-xl mt-6 mb-4 text-yellowColor2">
+          <div className="font-serif text-xl mt-6 text-yellowColor2">
             direkkt
           </div>
-          <span className="text-grayColor3 font-semibold text-sm w-64 mx-auto">
+          <span className="text-white font-semibold text-sm w-64 mx-auto">
             Visionary
           </span>
+          <div className="w-52">
+            <span className="text-grayColor3 font-semibold text-xs">
+              Marketing Director at The Sandbox with 10+ year experience working
+              in the gaming industry (Activision Blizzard, Wargaming)
+            </span>
+          </div>
 
           <div className="flex mt-6 justify-center">
             {/* <a className="mr-px" href="#">
@@ -53,8 +59,8 @@ const Team = () => (
               <Image
                 src="/assets/team/twitter.png"
                 alt="Twitter"
-                width="48"
-                height="48"
+                width="24"
+                height="24"
               />
             </a>
           </div>
@@ -73,12 +79,18 @@ const Team = () => (
             width="164"
             height="164"
           />
-          <div className="font-serif text-xl mt-6 mb-4 text-yellowColor2">
+          <div className="font-serif text-xl mt-6 text-yellowColor2">
             Sickpencil
           </div>
-          <span className="text-grayColor3 font-semibold text-sm w-64 mx-auto">
+          <span className="text-white font-semibold text-sm w-64 mx-auto">
             Artist
           </span>
+          <div className="w-52">
+            <span className="text-grayColor3 font-semibold text-xs">
+              Digital artist and creative mastermind known for his unique style
+              and several popular derivatives across the NFT space
+            </span>
+          </div>
 
           <div className="flex mt-6 justify-center">
             {/* <a className="mr-px" href="#">
@@ -93,8 +105,8 @@ const Team = () => (
               <Image
                 src="/assets/team/twitter.png"
                 alt="Twitter"
-                width="48"
-                height="48"
+                width="24"
+                height="24"
               />
             </a>
           </div>
@@ -113,12 +125,16 @@ const Team = () => (
             width="164"
             height="164"
           />
-          <div className="font-serif text-xl mt-6 mb-4 text-yellowColor2">
-            Naz
-          </div>
-          <span className="text-grayColor3 font-semibold text-sm w-64 mx-auto">
+          <div className="font-serif text-xl mt-6 text-yellowColor2">Naz</div>
+          <span className="text-white font-semibold text-sm w-64 mx-auto">
             Tech
           </span>
+          <div className="w-52">
+            <span className="text-grayColor3 font-semibold text-xs">
+              reNFT tech co-founder, first peer-to-peer ERC-721 and ERC-1155
+              lending / renting protocol
+            </span>
+          </div>
 
           <div className="flex mt-6 justify-center">
             {/* <a className="mr-px" href="#">
@@ -133,8 +149,8 @@ const Team = () => (
               <Image
                 src="/assets/team/twitter.png"
                 alt="Twitter"
-                width="48"
-                height="48"
+                width="24"
+                height="24"
               />
             </a>
           </div>
@@ -153,12 +169,18 @@ const Team = () => (
             width="164"
             height="164"
           />
-          <div className="font-serif text-xl mt-6 mb-4 text-yellowColor2">
+          <div className="font-serif text-xl mt-6 text-yellowColor2">
             Nickev
           </div>
-          <span className="text-grayColor3 font-semibold text-sm w-64 mx-auto">
+          <span className="text-white font-semibold text-sm w-64 mx-auto">
             Marketing
           </span>
+          <div className="w-52">
+            <span className="text-grayColor3 font-semibold text-xs">
+              Marketing all-rounder and co-founder at reNFT as well as Marketing
+              at The Sandbox
+            </span>
+          </div>
 
           <div className="flex mt-6 justify-center">
             {/* <a className="mr-px" href="#">
@@ -173,8 +195,8 @@ const Team = () => (
               <Image
                 src="/assets/team/twitter.png"
                 alt="Twitter"
-                width="48"
-                height="48"
+                width="24"
+                height="24"
               />
             </a>
           </div>
