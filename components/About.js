@@ -3,10 +3,10 @@ import React from "react";
 // About Component
 // ------------------------------------------------------------------------------------------------------- //
 const About = () => (
-  <div id="about" className="flex flex-col items-center px-5p text-white mb-12">
+  <div id="about" className="flex flex-col items-center px-2p py-2p mt-2 text-white">
     {/* About Content */}
     <div
-      className="mt-2 w-full h-30vmax sm:h-47vmax 2xl:h-screen"
+      className="mt-2 w-full h-30vmax"
       style={{
         backgroundImage: `url('/assets/about/rumble_banner.png')`,
         backgroundRepeat: "no-repeat",

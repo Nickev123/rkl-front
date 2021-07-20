@@ -11,7 +11,7 @@ const Game = () => (
     <div className="w-10/12 flex flex-col justify-center flex-wrap">
       {/* Game Content */}
       <div
-        className="mt-8 mb-8 0xl:mb-36 mr-8 flex flex-col justify-between text-center"
+        className="mt-8 mr-8 flex flex-col justify-between text-center"
         data-aos="fade"
       >
         <h2 className="font-sans mb-3 text-3xl text-yellowColor">The Game</h2>
