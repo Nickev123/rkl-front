@@ -6,7 +6,7 @@ import Image from "next/image";
 const Mint = () => (
   <div
     id="mint"
-    className="flex flex-col items-center justify-center px-5p text-white mt-20"
+    className="flex flex-col items-center justify-center px-5p text-white"
   >
     <div
       className="w-10/12 flex justify-center 0xl:justify-between flex-wrap"

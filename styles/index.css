@@ -102,3 +102,15 @@
   color: black;
   background: yellow;
 }
+
+@media (max-width: 768px) { 
+  #banner-desktop{
+      display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #banner-mobile{
+    height: 40vmax;
+  }
+}
