@@ -16,7 +16,7 @@ const Game = () => (
       >
         <h2 className="font-sans mb-3 text-3xl text-yellowColor">The Game</h2>
         <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center"></div>
-        <h4 className="font-sans text-white text-xl">
+        <h4 className="font-serif text-white text-xl">
           The core gameplay of the Rumble Kong League will evolve around
           exciting 3 versus 3 basketball matches, combining proven gameplay and
           play-to-earn mechanics. Compete with and against other real users and

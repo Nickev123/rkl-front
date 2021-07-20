@@ -13,7 +13,7 @@ const Team = () => (
       >
         <h2 className="font-sans mb-3 text-3xl text-yellowColor">The Team</h2>
         <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center xl:self-start"></div>
-        <h4 className="font-sans text-white text-xl">
+        <h4 className="font-serif text-white text-xl">
           Meet the team bringing you the rumble
         </h4>
       </div>
@@ -40,7 +40,7 @@ const Team = () => (
             Visionary
           </span>
           <div className="w-52">
-            <span className="text-grayColor3 font-semibold text-xs">
+            <span className="font-serif text-grayColor3 font-semibold text-xs">
               Marketing Director at The Sandbox with 10+ year experience working
               in the gaming industry (Activision Blizzard, Wargaming)
             </span>
@@ -86,7 +86,7 @@ const Team = () => (
             Artist
           </span>
           <div className="w-52">
-            <span className="text-grayColor3 font-semibold text-xs">
+            <span className="font-serif text-grayColor3 font-semibold text-xs">
               Digital artist and creative mastermind known for his unique style
               and several popular derivatives across the NFT space
             </span>
@@ -130,7 +130,7 @@ const Team = () => (
             Tech
           </span>
           <div className="w-52">
-            <span className="text-grayColor3 font-semibold text-xs">
+            <span className="font-serif text-grayColor3 font-semibold text-xs">
               reNFT tech co-founder, first peer-to-peer ERC-721 and ERC-1155
               lending / renting protocol
             </span>
@@ -174,7 +174,7 @@ const Team = () => (
             Marketing
           </span>
           <div className="w-52">
-            <span className="text-grayColor3 font-semibold text-xs">
+            <span className="font-serif text-grayColor3 font-semibold text-xs">
               Marketing all-rounder and co-founder at reNFT as well as Marketing
               at The Sandbox
             </span>
