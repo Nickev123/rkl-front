@@ -8,15 +8,15 @@ const Game = () => (
     id="game"
     className="flex flex-col items-center justify-center px-5p text-white mb-8"
   >
-    <div className="w-10/12 flex flex-col justify-center flex-wrap">
+    <div className="w-12/12 md:w-10/12 flex flex-col justify-center flex-wrap">
       {/* Game Content */}
       <div
-        className="mt-8 mr-8 flex flex-col justify-between text-center"
+        className="mt-8 flex flex-col justify-between text-center"
         data-aos="fade"
       >
         <h2 className="font-sans mb-3 mt-8 text-3xl text-yellowColor">The Game</h2>
         <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center"></div>
-        <h4 className="font-serif text-justify text-white text-xl">
+        <h4 className="font-serif text-justify text-white text-sm md:text-xl">
           The core gameplay of the Rumble Kong League will evolve around
           exciting 3 versus 3 basketball matches, combining proven gameplay and
           play-to-earn mechanics. Compete with and against other real users and
@@ -40,85 +40,6 @@ const Game = () => (
         </h4>
       </div>
 
-      {/* Game Images */}
-      {/* <div className="flex text-center justify-center xl:justify-between flex-wrap mb-12">
-        <div
-          className="mr-4 mb-4"
-          data-aos="fade-right"
-          data-aos-delay="200"
-          data-aos-anchor-placement="center-bottom"
-        >
-          <Image
-            className="mx-auto"
-            src="/assets/game/monkey1.png"
-            alt="Game Image"
-            width="256"
-            height="175"
-          />
-          <div className="font-semibold my-2">PLAY</div>
-          <p className="text-grayColor2 w-64 mx-auto">This is a text</p>
-        </div>
-
-        <div
-          className="mr-4 mb-4"
-          data-aos="fade-right"
-          data-aos-delay="200"
-          data-aos-anchor-placement="center-bottom"
-        >
-          <Image
-            className="mx-auto"
-            src="/assets/game/monkey1.png"
-            alt="Game Image"
-            width="256"
-            height="175"
-          />
-          <div className="font-semibold my-2">EARN</div>
-          <p className="text-grayColor2 w-64 mx-auto">This is a text</p>
-        </div>
-
-        <div
-          className="mr-4 mb-4"
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-anchor-placement="center-bottom"
-        >
-          <Image
-            className="mx-auto"
-            src="/assets/game/monkey1.png"
-            alt="Game Image"
-            width="256"
-            height="175"
-          />
-          <div className="font-semibold my-2">MANAGE</div>
-          <p className="text-grayColor2 w-64 mx-auto">This is a text</p>
-        </div>
-
-        <div
-          data-aos="fade-left"
-          data-aos-delay="200"
-          data-aos-anchor-placement="center-bottom"
-        >
-          <Image
-            className="mx-auto"
-            src="/assets/game/monkey1.png"
-            alt="Game Image"
-            width="256"
-            height="175"
-          />
-          <div className="font-semibold my-2">DOMINATE</div>
-          <p className="text-grayColor2 w-64 mx-auto">This is a text</p>
-        </div>
-      </div> */}
-
-      {/* Large Game Image */}
-      {/* <Image
-        className="mx-auto"
-        src="/assets/game/monkey2.png"
-        alt="Game Image"
-        width="1088"
-        height="590"
-        data-aos="fade"
-      /> */}
     </div>
 
     {/* White Seperator */}

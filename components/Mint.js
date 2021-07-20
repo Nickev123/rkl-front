@@ -8,19 +8,35 @@ const Mint = () => (
     id="mint"
     className="flex flex-col items-center justify-center px-5p text-white"
   >
+    {/* <div className="mb-16 block 0xl:hidden text-center">
+        <a href="#">
+          <button className="yellow-button">&nbsp;JOIN DISCORD&nbsp;</button>
+        </a>
+      </div> */}
+
+    <a
+      href="https://discord.gg/PVeQeRdXYT"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      <button className="hover:bg-yellow-300 text-white-800 font-semibold py-2 px-4 border border-white-400 rounded shadow">
+        Join DISCORD
+      </button>
+    </a>
+
     <div
-      className="w-10/12 flex justify-center 0xl:justify-between flex-wrap"
+      className="w-12/12 md:w-10/12 flex justify-center 0xl:justify-between flex-wrap"
       // data-aos="fade-right"
       // data-aos-delay="200"
       // data-aos-anchor-placement="center-bottom"
     >
-      <div className="my-8 mr-8 flex flex-col justify-between">
+      <div className="my-8 flex flex-col justify-between">
         <div>
           <h2 className="font-sans mb-3 text-3xl text-yellowColor">
             Let&#39;s get ready to rumble
           </h2>
           <div className="w-20 h-0.5 bg-yellowColor mb-4"></div>
-          <h4 className="font-serif text-justify text-white text-xl">
+          <h4 className="font-serif text-justify text-white text-sm md:text-xl">
             Rumble Kong League is a competitive 3 vs 3 basketball experience,
             combining play-to-earn functionality with NFT Collection mechanics,
             enabling users to compete in engaging ways through NFTs. Launching
@@ -47,9 +63,9 @@ const Mint = () => (
             our game.
           </h4>
         </div>
-        <a className="mt-8 hidden 0xl:block" href="#">
+        {/* <a className="mt-8 hidden 0xl:block" href="#">
           <button className="yellow-button">MINT</button>
-        </a>
+        </a> */}
       </div>
 
       {/* <Image
@@ -58,12 +74,6 @@ const Mint = () => (
         width="511"
         height="487"
       /> */}
-
-      <div className="mt-8 block 0xl:hidden w-full text-center">
-        <a href="#">
-          <button className="yellow-button">MINT</button>
-        </a>
-      </div>
     </div>
 
     {/* White Seperator */}
@@ -73,7 +83,7 @@ const Mint = () => (
     ></div>
 
     <div
-      className="w-10/12 flex justify-center 1xl:justify-between flex-wrap mt-20"
+      className="w-12/12 md:w-10/12 flex justify-center 1xl:justify-between flex-wrap mt-20"
       data-aos="fade-left"
       data-aos-delay="200"
       data-aos-anchor-placement="center-bottom"
@@ -86,23 +96,21 @@ const Mint = () => (
         height="458"
       />
 
-      <div className="my-8 flex flex-col justify-between w-auto lg:w-1/2">
-        <div className="ml-8">
-          <h2 className="font-sans mb-3 text-3xl text-yellowColor">
-            Quality is dope
-          </h2>
-          <div className="w-20 h-0.5 bg-yellowColor mb-4"></div>
-          <h4 className="font-serif text-justify text-white text-xl">
-            Each Kong is assembled from a set of 100+ carefully hand-drawn
-            traits by known NFT artist sickpencil, who has made a name for
-            himself through his unique art style and various high-quality
-            derivatives. Rumble Kongs are giving him the opportunity to express
-            his creativity to the fullest, by combining everyday basketball
-            traits with unique out-of-this-world designs. No two Kongs look
-            alike, with the visual being live on IPFS, as well as Arweave,
-            ensuring permanence of the art.
-          </h4>
-        </div>
+      <div className="my-8 flex flex-col justify-between w-auto">
+        <h2 className="font-sans mb-3 text-3xl text-yellowColor">
+          Quality is dope
+        </h2>
+        <div className="w-20 h-0.5 bg-yellowColor mb-4"></div>
+        <h4 className="font-serif text-justify text-white text-sm md:text-xl">
+          Each Kong is assembled from a set of 100+ carefully hand-drawn traits
+          by known NFT artist sickpencil, who has made a name for himself
+          through his unique art style and various high-quality derivatives.
+          Rumble Kongs are giving him the opportunity to express his creativity
+          to the fullest, by combining everyday basketball traits with unique
+          out-of-this-world designs. No two Kongs look alike, with the visual
+          being live on IPFS, as well as Arweave, ensuring permanence of the
+          art.
+        </h4>
       </div>
     </div>
 

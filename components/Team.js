@@ -8,12 +8,12 @@ const Team = () => (
     <div className="w-10/12 flex flex-col flex-wrap">
       {/* Team Content */}
       <div
-        className="mt-4 mb-16 mr-8 flex flex-col justify-between text-center xl:text-left"
+        className="mt-4 mb-16 flex flex-col justify-between text-center xl:text-left"
         data-aos="fade"
       >
         <h2 className="font-sans mb-3 text-3xl text-yellowColor">The Team</h2>
         <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center xl:self-start"></div>
-        <h4 className="font-serif text-white text-xl">
+        <h4 className="font-serif text-white text-sm md:text-xl">
           Meet the team bringing you the rumble
         </h4>
       </div>
@@ -24,7 +24,7 @@ const Team = () => (
           className="mx-8 mb-8"
           data-aos="fade-right"
           data-aos-delay="200"
-          data-aos-anchor-placement="center-bottom"
+          // data-aos-anchor-placement="center-bottom"
         >
           <Image
             className="mx-auto"
@@ -55,7 +55,11 @@ const Team = () => (
                 height="48"
               />
             </a> */}
-            <a href="https://twitter.com/direkkt" target="_blank" rel="noreferrer noopener">
+            <a
+              href="https://twitter.com/direkkt"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Image
                 src="/assets/team/twitter.png"
                 alt="Twitter"
@@ -70,7 +74,7 @@ const Team = () => (
           className="mx-8 mb-8"
           data-aos="fade-right"
           data-aos-delay="200"
-          data-aos-anchor-placement="center-bottom"
+          // data-aos-anchor-placement="center-bottom"
         >
           <Image
             className="mx-auto"
@@ -101,7 +105,11 @@ const Team = () => (
                 height="48"
               />
             </a> */}
-            <a href="https://twitter.com/sickpencil" target="_blank" rel="noreferrer noopener">
+            <a
+              href="https://twitter.com/sickpencil"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Image
                 src="/assets/team/twitter.png"
                 alt="Twitter"
@@ -116,7 +124,7 @@ const Team = () => (
           className="mx-8 mb-8"
           data-aos="fade-right"
           data-aos-delay="200"
-          data-aos-anchor-placement="center-bottom"
+          // data-aos-anchor-placement="center-bottom"
         >
           <Image
             className="mx-auto"
@@ -145,7 +153,11 @@ const Team = () => (
                 height="48"
               />
             </a> */}
-            <a href="https://twitter.com/AlgorithmicBot" target="_blank" rel="noreferrer noopener">
+            <a
+              href="https://twitter.com/AlgorithmicBot"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Image
                 src="/assets/team/twitter.png"
                 alt="Twitter"
@@ -160,7 +172,7 @@ const Team = () => (
           className="mx-8 mb-8"
           data-aos="fade-right"
           data-aos-delay="200"
-          data-aos-anchor-placement="center-bottom"
+          // data-aos-anchor-placement="center-bottom"
         >
           <Image
             className="mx-auto"
@@ -189,7 +201,11 @@ const Team = () => (
                 height="48"
               />
             </a> */}
-            <a href="https://twitter.com/nickev123" target="_blank" rel="noreferrer noopener">
+            <a
+              href="https://twitter.com/nickev123"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <Image
                 src="/assets/team/twitter.png"
                 alt="Twitter"

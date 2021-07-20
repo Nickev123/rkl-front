@@ -3,7 +3,7 @@ import React from "react";
 // Overlay Component
 // ------------------------------------------------------------------------------------------------------- //
 const Overlay = () => (
-  <div className="mt-20 mb-8 0xl:mb-36 mr-8 flex flex-col justify-between items-center text-center px-5p">
+  <div className="mt-20 mb-8 0xl:mb-36 flex flex-col justify-between items-center text-center px-5p">
     {/* Overlay Content */}
     <h2 className="font-sans mb-3 text-7xl">HEADER</h2>
     <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center"></div>

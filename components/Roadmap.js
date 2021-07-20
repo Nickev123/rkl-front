@@ -10,7 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 const Roadmap = () => (
   <div id="roadmap" className="mb-28">
     <div
-      className="mt-4 mb-0 xl:mb-20 mr-8 flex flex-col justify-between text-center"
+      className="mt-4 mb-0 xl:mb-20 flex flex-col justify-between text-center"
       data-aos="fade"
     >
       <h2 className="font-sans mb-2 mt-12 text-3xl text-yellowColor">Roadmap</h2>
