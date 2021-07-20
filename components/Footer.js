@@ -53,7 +53,7 @@ const Footer = () => (
 
       {/* Social Links */}
       <div className="flex justify-center">
-        <a className="mr-4" href="#">
+        <a className="mr-4" href="https://discord.gg/PVeQeRdXYT" target="_blank" rel="noreferrer noopener">
           <Image
             src="/assets/footer/discord.jpg"
             alt="Discord"
@@ -61,7 +61,7 @@ const Footer = () => (
             height="32"
           />
         </a>
-        <a href="#">
+        <a href="https://twitter.com/RumbleKongs" target="_blank" rel="noreferrer noopener">
           <Image
             src="/assets/footer/twitter.png"
             alt="Twitter"

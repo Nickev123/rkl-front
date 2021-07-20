@@ -55,7 +55,7 @@ const Team = () => (
                 height="48"
               />
             </a> */}
-            <a href="https://twitter.com/direkkt">
+            <a href="https://twitter.com/direkkt" target="_blank" rel="noreferrer noopener">
               <Image
                 src="/assets/team/twitter.png"
                 alt="Twitter"
@@ -101,7 +101,7 @@ const Team = () => (
                 height="48"
               />
             </a> */}
-            <a href="https://twitter.com/sickpencil">
+            <a href="https://twitter.com/sickpencil" target="_blank" rel="noreferrer noopener">
               <Image
                 src="/assets/team/twitter.png"
                 alt="Twitter"
@@ -145,7 +145,7 @@ const Team = () => (
                 height="48"
               />
             </a> */}
-            <a href="https://twitter.com/AlgorithmicBot">
+            <a href="https://twitter.com/AlgorithmicBot" target="_blank" rel="noreferrer noopener">
               <Image
                 src="/assets/team/twitter.png"
                 alt="Twitter"
@@ -189,7 +189,7 @@ const Team = () => (
                 height="48"
               />
             </a> */}
-            <a href="https://twitter.com/nickev123">
+            <a href="https://twitter.com/nickev123" target="_blank" rel="noreferrer noopener">
               <Image
                 src="/assets/team/twitter.png"
                 alt="Twitter"
