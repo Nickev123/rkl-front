@@ -33,6 +33,7 @@ const Mint = () => (
             Let&#39;s get ready to rumble
           </h2>
           <div className="w-20 h-0.5 bg-yellow-400"></div>
+
           <h4 className="font-serif text-justify text-white text-sm md:text-2xl mt-8 mb-8">
             Rumble Kong League is a competitive 3 vs 3 basketball experience,
             combining play-to-earn functionality with NFT Collection mechanics,
@@ -42,8 +43,14 @@ const Mint = () => (
             assembled and curated. On top of being carefully generated from the
             quality artwork traits, each Kong comes with a randomly generated
             set of attributes that can influence their performance in the game.
-            <br />
-            <br />
+            <div className="text-center mt-8 mb-8">
+              <Image
+                src="/assets/game/the-game-3.png"
+                width={625}
+                height={500}
+                alt="game-card"
+              />
+            </div>
             Combining a strong vision, high-quality art, cutting-edge backend
             technology, as well as a public and experienced team, it is our
             vision to give new use-cases to NFTs and disrupt the current
@@ -69,20 +76,12 @@ const Mint = () => (
     <div className="w-10/12 h-0.5 bg-offwhite bg-yellow-400 hidden 0xl:block mb-8"></div>
 
     <div
-      className="w-12/12 md:w-10/12 flex flex-row justify-center content-center 0xl:justify-between flex-wrap"
+      className="w-12/12 md:w-10/12"
       data-aos="fade-left"
       data-aos-delay="200"
       // data-aos-anchor-placement="center-bottom"
     >
-      <Image src="/assets/team/naz.PNG" width={500} height={500} alt="kong" />
-      <Image
-        src="/assets/team/sickpencil.PNG"
-        width={500}
-        height={500}
-        alt="kong"
-      />
-
-      <div className="flex flex-col justify-between w-auto">
+      <div className="w-12/12 md:w-6/12" style={{ display: "inline-block" }}>
         <div>
           <h2 className="font-sans mb-3 text-3xl yl-400 mt-8">
             Quality is dope
@@ -100,11 +99,17 @@ const Mint = () => (
           </h4>
         </div>
       </div>
+      <div
+        style={{ float: "right", textAlign: "right" }}
+        className="w-12/12 md:w-5/12"
+      >
+        <Image src="/assets/team/naz.PNG" width={500} height={500} alt="kong" />
+      </div>
     </div>
 
     {/* White Seperator */}
     <div
-      className="w-10/12 h-0.5 bg-offwhite hidden 0xl:block mb-8"
+      className="w-10/12 h-0.5 bg-offwhite hidden 0xl:block mb-8 mt-8"
       data-aos="fade"
     ></div>
   </div>

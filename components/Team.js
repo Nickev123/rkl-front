@@ -11,7 +11,7 @@ const Team = () => (
     <div className="w-12/12 md:w-10/12 flex flex-col justify-center flex-wrap">
       {/* Game Content */}
       <div className=" flex flex-col justify-between" data-aos="fade">
-        <h2 className="font-sans mb-3  text-3xl yl-400">The Teamm</h2>
+        <h2 className="font-sans mb-3  text-3xl yl-400">The Team</h2>
         <div className="w-20 h-0.5 bg-yellow-400 self-start"></div>
         <h4 className="font-serif text-white text-sm md:text-2xl mt-8 mb-8">
           Meet the team bringing you the rumble
@@ -138,6 +138,8 @@ const Team = () => (
             <span className="font-serif text-jusitfy text-grayColor3 font-semibold text-xs">
               reNFT tech co-founder, first peer-to-peer ERC-721 and ERC-1155
               lending / renting protocol
+              <br />
+              <br />
             </span>
           </div>
 
@@ -187,6 +189,8 @@ const Team = () => (
             <span className="font-serif text-grayColor3 font-semibold text-xs text-justify">
               Marketing all-rounder and co-founder at reNFT as well as Marketing
               at The Sandbox
+              <br />
+              <br />
             </span>
           </div>
 

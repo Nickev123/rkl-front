@@ -22,12 +22,24 @@ const Game = () => (
           users will need to be member of Clubs, a seperate layer of the
           ecosystem, giving users the chance to be the coach of their own team
           and find the best possible team to win the cup.
-          <br />
-          <br />
+          <div className="mt-8 mb-8 text-center">
+            <Image
+              src="/assets/game/the-game-1.png"
+              width={900}
+              height={500}
+              alt="game promo 1"
+            />
+          </div>
           The initial drop of 10.000 Kongs will help funding of the project,
           planned to be released later in 2021 globally.
-          <br />
-          <br />
+          <div className="mt-8 mb-8 text-center">
+            <Image
+              src="/assets/game/the-game-2.png"
+              width={900}
+              height={500}
+              alt="game promo 2"
+            />
+          </div>
           The Kongs will always be at the heart of the Rumble Kong League,
           however in the future it is our vision to open the league up to other
           NFT Collections, giving NFT interoperability a new meaning and
