@@ -5,7 +5,7 @@ import Image from "next/image";
 // ------------------------------------------------------------------------------------------------------- //
 const Team = () => (
   <div
-    id="game"
+    id="team"
     className="flex flex-col items-center justify-center px-5p text-white "
   >
     <div className="w-12/12 md:w-10/12 flex flex-col justify-center flex-wrap">
@@ -14,7 +14,8 @@ const Team = () => (
         <h2 className="font-sans mb-3  text-3xl yl-400">The Team</h2>
         <div className="w-20 h-0.5 bg-yellow-400 self-start"></div>
         <h4 className="font-serif text-white text-sm md:text-2xl mt-8 mb-8">
-          Meet the team bringing you the rumble
+          Meet the team bringing you the rumble. No anonymity, we have skin in
+          the game to make this work.
         </h4>
       </div>
 

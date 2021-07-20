@@ -30,7 +30,7 @@ const Mint = () => (
       <div className="flex flex-col justify-between">
         <div>
           <h2 className="font-sans mb-3 text-3xl yl-400 mt-8">
-            Let&#39;s get ready to rumble
+            Get Ready To Rumble
           </h2>
           <div className="w-20 h-0.5 bg-yellow-400"></div>
 
@@ -38,33 +38,30 @@ const Mint = () => (
             Rumble Kong League is a competitive 3 vs 3 basketball experience,
             combining play-to-earn functionality with NFT Collection mechanics,
             enabling users to compete in engaging ways through NFTs. Launching
-            with a set of unique 10.000 ERC-721 tokens, called Kongs, consisting
-            of programmed attributes from over 100 hand-drawn traits, carefully
-            assembled and curated. On top of being carefully generated from the
-            quality artwork traits, each Kong comes with a randomly generated
-            set of attributes that can influence their performance in the game.
+            with a set of unique 10,000 ERC-721 tokens, called Kongs. Alongside
+            a truly unique look, each Kong comes with a randomly generated set
+            of attributes that can influence their performance in a match,
+            providing additional depth and strategic elements.
             <div className="text-center mt-8 mb-8">
               <Image
                 src="/assets/game/the-game-3.png"
-                width={625}
-                height={500}
+                width={1084}
+                height={838}
                 alt="game-card"
               />
             </div>
-            Combining a strong vision, high-quality art, cutting-edge backend
-            technology, as well as a public and experienced team, it is our
-            vision to give new use-cases to NFTs and disrupt the current
-            landscape.
+            Combining our strong vision, high-quality art, cutting-edge backend
+            solutions, as well as a public and experienced team, it is our goal
+            to give new use-cases to NFTs and disrupt the current landscape.
             <br />
             <br />
-            Kongs will be minted revealed, with a provenance that is computed
-            and presented here on the website, without compromising the
-            rarities. Meaning no metadata leak is possible. This ensures a fair
-            random generation of the Kongs. Permanence of the art is guaranteed,
-            in addition to having your art live on IPFS, we have taken an extra
+            Kongs will be released with a provenance that is computed and
+            presented here on the website, without compromising the rarities,
+            meaning no metadata leak is possible. This ensures a fair random
+            generation of the Kongs. Permanence of the art is guaranteed, in
+            addition to having your art live on IPFS, we have taken an extra
             measure to have it on Arweave, as well. Minting randomness is
-            guaranteed via in-contract mechanisms. It is not possible to game
-            our game.
+            guaranteed via in-contract mechanisms.
           </h4>
         </div>
         {/* <a className=" hidden 0xl:block" href="#">
@@ -84,18 +81,28 @@ const Mint = () => (
       <div className="w-12/12 md:w-6/12" style={{ display: "inline-block" }}>
         <div>
           <h2 className="font-sans mb-3 text-3xl yl-400 mt-8">
-            Quality is dope
+            Commitment to Quality
           </h2>
           <div className="w-20 h-0.5 bg-yellow-400 "></div>
           <h4 className="font-serif text-justify text-white text-sm md:text-2xl mt-8 mb-8">
             Each Kong is assembled from a set of 100+ carefully hand-drawn
-            traits by known NFT artist sickpencil, who has made a name for
-            himself through his unique art style and various high-quality
-            derivatives. Rumble Kongs are giving him the opportunity to express
-            his creativity to the fullest, by combining everyday basketball
-            traits with unique out-of-this-world designs. No two Kongs look
-            alike, with the visual being live on IPFS, as well as Arweave,
-            ensuring permanence of the art.
+            traits, split into various categories. Out of over 45million
+            possible combinations, 10.000 will be assembled through a
+            programmatic approach, giving each Kong a distinct look. Our art is
+            inspired by other monkey-based collections (You know who we are
+            talking about), but it is our aim to give it our own twist through
+            unique designs.
+            <br />
+            <br />
+            Each of the traits has been hand-drawn by digital artist sickpencil,
+            known for his unique art style and various high-quality NFT
+            derivatives and standalone NFT pieces. Rumble Kongs are giving him
+            the opportunity to express his creativity to the fullest, by
+            combining everyday basketball traits with unique out-of-this-world
+            designs. No two Kongs look alike, with the visual being live on
+            IPFS, as well as Arweave, ensuring permanence of the art. In
+            addition to that, owners will receive a complete commercial licence
+            to any owned Kong.
           </h4>
         </div>
       </div>
