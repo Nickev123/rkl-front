@@ -80,7 +80,7 @@ const Mint = () => (
     >
       <Image
         className="order-last 1xl:order-none"
-        src="/assets/mint/2.PNG"
+        src="/assets/team/naz.png"
         alt="Mint Image"
         width="480"
         height="458"
