@@ -99,6 +99,13 @@ const Roadmap = () => (
     <div className="flex flex-col items-center justify-center px-5p text-white">
       <div className="w-12/12 md:w-10/12 flex justify-center 0xl:justify-between flex-wrap">
         <h4 className="font-serif text-justify text-white text-sm md:text-2xl mt-8 mb-8">
+          In addition to the above we will use part of the sale proceeds to
+          support various charities, bringing sport closer to those who
+          can&apos;t exercise themselves and help gorillas getting introduced
+          back to nature. This is not a sales milestone for us, but something
+          ongoing we are committed to.
+          <br />
+          <br />
           Beyond our existing roadmap, there are a lot of ideas floating around
           our heads. Below is roughly 1% of them.
           <br />

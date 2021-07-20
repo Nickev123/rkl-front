@@ -38,15 +38,15 @@ const Mint = () => (
             Rumble Kong League is a competitive 3 vs 3 basketball experience,
             combining play-to-earn functionality with NFT Collection mechanics,
             enabling users to compete in engaging ways through NFTs. Launching
-            with a set of unique 10,000 ERC-721 tokens, called Kongs. Alongside
+            with a set of unique 10.000 ERC-721 tokens, called Kongs. Alongside
             a truly unique look, each Kong comes with a randomly generated set
             of attributes that can influence their performance in a match,
             providing additional depth and strategic elements.
             <div className="text-center mt-8 mb-8">
               <Image
-                src="/assets/game/the-game-3.png"
-                width={1084}
-                height={838}
+                src="/assets/mint/girl-ape.jpeg"
+                width={500}
+                height={500}
                 alt="game-card"
               />
             </div>

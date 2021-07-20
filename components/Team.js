@@ -25,14 +25,14 @@ const Team = () => (
             className="mx-auto"
             src="/assets/team/direkkt.PNG"
             alt="Team Image"
-            width="164"
-            height="164"
+            width="250"
+            height="250"
           />
           <div className="font-sans text-2xl mt-6 yl-400">direkkt</div>
           <span className="text-white font-semibold text-sm w-64 mx-auto">
             Visionary
           </span>
-          <div className="w-52">
+          <div className="font-serif text-grayColor2 w-64 mx-auto text-justify">
             <span className="font-serif text-justify text-grayColor3 font-semibold text-xs">
               Marketing Director at The Sandbox with 10+ year experience working
               in the gaming industry (Activision Blizzard, Wargaming)
@@ -61,14 +61,14 @@ const Team = () => (
             className="mx-auto"
             src="/assets/team/sickpencil.PNG"
             alt="Team Image"
-            width="164"
-            height="164"
+            width="250"
+            height="250"
           />
           <div className="font-sans text-2xl mt-6 yl-400">Sickpencil</div>
           <span className="text-white font-semibold text-sm w-64 mx-auto">
             Artist
           </span>
-          <div className="w-52">
+          <div className="font-serif text-grayColor2 w-64 mx-auto text-justify">
             <span className="font-serif text-justify text-grayColor3 font-semibold text-xs">
               Digital artist and creative mastermind known for his unique style
               and several popular derivatives across the NFT space
@@ -97,14 +97,14 @@ const Team = () => (
             className="mx-auto"
             src="/assets/team/naz.PNG"
             alt="Team Image"
-            width="164"
-            height="164"
+            width="250"
+            height="250"
           />
           <div className="font-sans text-2xl mt-6 yl-400">Naz</div>
           <span className="text-white font-semibold text-sm w-64 mx-auto">
             Tech
           </span>
-          <div className="w-52">
+          <div className="font-serif text-grayColor2 w-64 mx-auto text-justify">
             <span className="font-serif text-jusitfy text-grayColor3 font-semibold text-xs">
               reNFT tech co-founder, first peer-to-peer ERC-721 and ERC-1155
               lending / renting protocol
@@ -135,14 +135,14 @@ const Team = () => (
             className="mx-auto"
             src="/assets/team/nick.PNG"
             alt="Team Image"
-            width="164"
-            height="164"
+            width="250"
+            height="250"
           />
           <div className="font-sans text-2xl mt-6 yl-400">Nickev</div>
           <span className="text-white font-semibold text-sm w-64 mx-auto">
             Marketing
           </span>
-          <div className="w-52">
+          <div className="font-serif text-grayColor2 w-64 mx-auto text-justify">
             <span className="font-serif text-grayColor3 font-semibold text-xs text-justify">
               Marketing all-rounder and co-founder at reNFT as well as Marketing
               at The Sandbox

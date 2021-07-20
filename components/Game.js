@@ -11,6 +11,14 @@ const Game = () => (
         <h2 className="font-sans mb-3  text-3xl yl-400">The Game</h2>
         <div className="w-20 h-0.5 bg-yellow-400" />
         <h4 className="font-serif text-justify text-white text-sm md:text-2xl mt-8 mb-8">
+          <div className="text-center mt-8 mb-8">
+            <Image
+              src="/assets/game/the-game-3.png"
+              width={1084}
+              height={838}
+              alt="game-card"
+            />
+          </div>
           The core gameplay of the Rumble Kong League will evolve around
           exciting 3 versus 3 basketball matches, combining proven gameplay- and
           play-to-earn mechanics. Compete with and against other real users and
@@ -42,7 +50,6 @@ const Game = () => (
           weeks.
         </h4>
       </div>
-      {/* Game Images */}
       <div className="flex text-center justify-center xl:justify-between flex-wrap mb-12">
         <div
           className="mr-4 mb-4"
@@ -52,7 +59,7 @@ const Game = () => (
         >
           <Image
             className="mx-auto"
-            src="/assets/team/naz.PNG"
+            src="/assets/game/gamepad.png"
             alt="Game Image"
             width="250"
             height="250"
@@ -74,7 +81,7 @@ const Game = () => (
         >
           <Image
             className="mx-auto"
-            src="/assets/team/direkkt.PNG"
+            src="/assets/game/coin.png"
             alt="Game Image"
             width="250"
             height="250"
@@ -96,7 +103,7 @@ const Game = () => (
         >
           <Image
             className="mx-auto"
-            src="/assets/team/nick.PNG"
+            src="/assets/game/strategy.png"
             alt="Game Image"
             width="250"
             height="250"
@@ -117,7 +124,7 @@ const Game = () => (
         >
           <Image
             className="mx-auto"
-            src="/assets/team/sickpencil.PNG"
+            src="/assets/game/crown.png"
             alt="Game Image"
             width="250"
             height="250"
