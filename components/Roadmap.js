@@ -13,7 +13,7 @@ const Roadmap = () => (
       className="mt-4 mb-0 xl:mb-20 mr-8 flex flex-col justify-between text-center"
       data-aos="fade"
     >
-      <h2 className="font-sans mb-2 text-3xl text-yellowColor">Roadmap</h2>
+      <h2 className="font-sans mb-2 mt-12 text-3xl text-yellowColor">Roadmap</h2>
       <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center"></div>
     </div>
 

@@ -56,6 +56,26 @@ const Header = () => (
         </a>
       </nav>
 
+      {/* Social Links */}
+      <div className="flex justify-center">
+        <a className="mr-4" href="https://discord.gg/PVeQeRdXYT" target="_blank" rel="noreferrer noopener">
+          <Image
+            src="/assets/footer/discord.jpg"
+            alt="Discord"
+            width="32"
+            height="32"
+          />
+        </a>
+        <a href="https://twitter.com/RumbleKongs" target="_blank" rel="noreferrer noopener">
+          <Image
+            src="/assets/footer/twitter.png"
+            alt="Twitter"
+            width="32"
+            height="32"
+          />
+        </a>
+      </div>
+
       {/* Navigation for Mobile */}
       <div className="md:hidden">
         <Menu right>

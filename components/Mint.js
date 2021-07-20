@@ -6,13 +6,13 @@ import Image from "next/image";
 const Mint = () => (
   <div
     id="mint"
-    className="flex flex-col items-center justify-center px-5p text-white mb-8"
+    className="flex flex-col items-center justify-center px-5p text-white mt-20"
   >
     <div
       className="w-10/12 flex justify-center 0xl:justify-between flex-wrap"
-      data-aos="fade-right"
-      data-aos-delay="200"
-      data-aos-anchor-placement="center-bottom"
+      // data-aos="fade-right"
+      // data-aos-delay="200"
+      // data-aos-anchor-placement="center-bottom"
     >
       <div className="my-8 mr-8 flex flex-col justify-between">
         <div>
@@ -108,7 +108,7 @@ const Mint = () => (
 
     {/* White Seperator */}
     <div
-      className="w-10/12 h-0.5 bg-offwhite mt-12 mb-4 hidden 0xl:block"
+      className="w-10/12 h-0.5 bg-offwhite mt-24 mb-4 hidden 0xl:block"
       data-aos="fade"
     ></div>
   </div>

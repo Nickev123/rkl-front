@@ -14,7 +14,7 @@ const Game = () => (
         className="mt-8 mr-8 flex flex-col justify-between text-center"
         data-aos="fade"
       >
-        <h2 className="font-sans mb-3 text-3xl text-yellowColor">The Game</h2>
+        <h2 className="font-sans mb-3 mt-8 text-3xl text-yellowColor">The Game</h2>
         <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center"></div>
         <h4 className="font-serif text-justify text-white text-xl">
           The core gameplay of the Rumble Kong League will evolve around
@@ -123,7 +123,7 @@ const Game = () => (
 
     {/* White Seperator */}
     <div
-      className="w-10/12 h-0.5 bg-offwhite mt-12 mb-4 hidden 0xl:block"
+      className="w-10/12 h-0.5 bg-offwhite mt-24 mb-4 hidden 0xl:block"
       data-aos="fade"
     ></div>
   </div>
