@@ -19,13 +19,8 @@ const Team = () => (
         </h4>
       </div>
 
-      {/* Team Images */}
       <div className="flex text-center justify-center xl:justify-between flex-wrap">
-        <div
-          data-aos="fade-right"
-          data-aos-delay="200"
-          // data-aos-anchor-placement="center-bottom"
-        >
+        <div data-aos="fade-right" data-aos-delay="200">
           <Image
             className="mx-auto"
             src="/assets/team/direkkt.PNG"
@@ -45,14 +40,6 @@ const Team = () => (
           </div>
 
           <div className="flex mt-6 justify-center">
-            {/* <a className="mr-px" href="#">
-              <Image
-                src="/assets/team/discord.png"
-                alt="Discord"
-                width="48"
-                height="48"
-              />
-            </a> */}
             <a
               href="https://twitter.com/direkkt"
               target="_blank"
@@ -69,12 +56,7 @@ const Team = () => (
           </div>
         </div>
 
-        <div
-          className="mx-8 "
-          data-aos="fade-right"
-          data-aos-delay="200"
-          // data-aos-anchor-placement="center-bottom"
-        >
+        <div className="mx-8 " data-aos="fade-right" data-aos-delay="200">
           <Image
             className="mx-auto"
             src="/assets/team/sickpencil.PNG"
@@ -94,14 +76,6 @@ const Team = () => (
           </div>
 
           <div className="flex mt-6 justify-center">
-            {/* <a className="mr-px" href="#">
-              <Image
-                src="/assets/team/discord.png"
-                alt="Discord"
-                width="48"
-                height="48"
-              />
-            </a> */}
             <a
               href="https://twitter.com/sickpencil"
               target="_blank"
@@ -118,12 +92,7 @@ const Team = () => (
           </div>
         </div>
 
-        <div
-          className="mx-8 "
-          data-aos="fade-right"
-          data-aos-delay="200"
-          // data-aos-anchor-placement="center-bottom"
-        >
+        <div className="mx-8 " data-aos="fade-right" data-aos-delay="200">
           <Image
             className="mx-auto"
             src="/assets/team/naz.PNG"
@@ -145,14 +114,6 @@ const Team = () => (
           </div>
 
           <div className="flex mt-6 justify-center">
-            {/* <a className="mr-px" href="#">
-              <Image
-                src="/assets/team/discord.png"
-                alt="Discord"
-                width="48"
-                height="48"
-              />
-            </a> */}
             <a
               href="https://twitter.com/AlgorithmicBot"
               target="_blank"
@@ -169,12 +130,7 @@ const Team = () => (
           </div>
         </div>
 
-        <div
-          className="mx-8 "
-          data-aos="fade-right"
-          data-aos-delay="200"
-          // data-aos-anchor-placement="center-bottom"
-        >
+        <div className="mx-8 " data-aos="fade-right" data-aos-delay="200">
           <Image
             className="mx-auto"
             src="/assets/team/nick.PNG"
@@ -196,14 +152,6 @@ const Team = () => (
           </div>
 
           <div className="flex mt-6 justify-center">
-            {/* <a className="mr-px" href="#">
-              <Image
-                src="/assets/team/discord.png"
-                alt="Discord"
-                width="48"
-                height="48"
-              />
-            </a> */}
             <a
               href="https://twitter.com/nickev123"
               target="_blank"
@@ -220,18 +168,6 @@ const Team = () => (
           </div>
         </div>
       </div>
-
-      {/* Mint Button */}
-      {/* <div
-        className=" text-center"
-        data-aos="fade-right"
-        data-aos-delay="200"
-        data-aos-anchor-placement="center-bottom"
-      >
-        <a href="#">
-          <button className="yellow-button">MINT</button>
-        </a>
-      </div> */}
     </div>
 
     <div
