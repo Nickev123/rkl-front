@@ -6,6 +6,7 @@ import Mint from "../components/Mint";
 import Game from "../components/Game";
 import Team from "../components/Team";
 import Roadmap from "../components/Roadmap";
+import Provenance from "../components/Provenance";
 import Footer from "../components/Footer";
 // import Overlay from '../components/Overlay';
 

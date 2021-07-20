@@ -8,7 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 // Roadmap Component
 // ------------------------------------------------------------------------------------------------------- //
 const Roadmap = () => (
-  <div id="roadmap">
+  <div id="roadmap" className="mb-28">
     <div
       className="mt-4 mb-0 xl:mb-20 mr-8 flex flex-col justify-between text-center"
       data-aos="fade"

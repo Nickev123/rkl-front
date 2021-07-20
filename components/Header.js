@@ -89,6 +89,12 @@ const Header = () => (
           >
             ROADMAP
           </a>
+          <a
+            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:underline"
+            href="#provenance"
+          >
+            PROVENANCE
+          </a>
         </Menu>
       </div>
     </header>

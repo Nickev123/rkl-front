@@ -92,3 +92,13 @@
   right: 0;
   top: 0;
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: yellow;
+}
+
+::selection {
+  color: black;
+  background: yellow;
+}
