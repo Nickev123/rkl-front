@@ -78,7 +78,7 @@ const Mint = () => (
       data-aos-delay="200"
       // data-aos-anchor-placement="center-bottom"
     >
-      <div className="w-12/12 md:w-6/12" style={{ display: "inline-block" }}>
+      <div className="w-12/12 md:w-7/12" style={{ display: "inline-block" }}>
         <div>
           <h2 className="font-sans mb-3 text-3xl yl-400 mt-8">
             Commitment to Quality
@@ -110,7 +110,12 @@ const Mint = () => (
         style={{ float: "right", textAlign: "right" }}
         className="w-12/12 md:w-5/12"
       >
-        <Image src="/assets/team/naz.PNG" width={500} height={500} alt="kong" />
+        <Image
+          src="/assets/quality/quality.png"
+          width={500}
+          height={500}
+          alt="kong"
+        />
       </div>
     </div>
 
