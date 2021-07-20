@@ -16,7 +16,7 @@ const Header = () => (
     >
       {/* RKL Logo */}
       <Image
-        src="/assets/header/logo.jpg"
+        src="/assets/header/logo.png"
         alt="RKL Logo"
         width="96"
         height="96"

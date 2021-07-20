@@ -5,17 +5,17 @@ import Image from "next/image";
 // ------------------------------------------------------------------------------------------------------- //
 const Footer = () => (
   <footer
-    className="bg-white bg-grayColor text-white w-full px-2p"
+    className="bg-white bg-grayColor text-white w-full px-2p py-2p"
     data-aos="fade"
   >
     <div className="flex flex-col lg:flex-row justify-evenly items-center w-full flex-wrap">
       {/* RKL Logo */}
-      <Image
+      {/* <Image
         src="/assets/header/logo.jpg"
         alt="RKL Logo"
         width="137"
         height="137"
-      />
+      /> */}
 
       {/* Navigation */}
       <nav className="flex flex-col lg:flex-row text-sm md:text-base justify-evenly items-center w-3/5 max-w-3/5 font-sans font-semibold flex-wrap">
@@ -25,7 +25,7 @@ const Footer = () => (
         >
           ABOUT
         </a> */}
-        <a
+        {/* <a
           className="px-2 xl:px-3 pt-1 my-4 lg:my-0 inline-flex items-end hover:underline"
           href="#mint"
         >
@@ -48,7 +48,7 @@ const Footer = () => (
           href="#roadmap"
         >
           ROADMAP
-        </a>
+        </a> */}
       </nav>
 
       {/* Social Links */}
