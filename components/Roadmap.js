@@ -37,7 +37,7 @@ const Roadmap = () => (
         // icon={<WorkIcon />}
       >
         <h3 className="vertical-timeline-element-title">
-          Game Design Finalisation
+          Game Design Finalization
         </h3>
         <p className="font-serif">
           Whitepaper and game design has been shared with the community for
