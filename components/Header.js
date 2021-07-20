@@ -25,40 +25,51 @@ const Header = () => (
       {/* Navigation for Desktop */}
       <nav className="hidden md:inline-flex text-xs sm:text-sm md:text-base justify-evenly w-3/5 max-w-3/5 font-sans font-semibold flex-wrap 2xs:flex-nowrap">
         {/* <a
-          className="px-2 xl:px-3 pt-1 inline-flex items-end hover:underline"
+          className="px-2 xl:px-3 pt-1 inline-flex items-end"
           href="#about"
         >
           ABOUT
         </a> */}
         <a
-          className="px-2 xl:px-3 pt-1 inline-flex items-end hover:underline"
+          className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
           href="#mint"
         >
           MINT
         </a>
         <a
-          className="px-2 xl:px-3 pt-1 inline-flex items-end hover:underline"
+          className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
           href="#game"
         >
           GAME
         </a>
         <a
-          className="px-2 xl:px-3 pt-1 inline-flex items-end hover:underline"
+          className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
           href="#team"
         >
           TEAM
         </a>
         <a
-          className="px-2 xl:px-3 pt-1 inline-flex items-end hover:underline"
+          className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
           href="#roadmap"
         >
           ROADMAP
+        </a>
+        <a
+          className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
+          href="#provenance"
+        >
+          PROVENANCE
         </a>
       </nav>
 
       {/* Social Links */}
       <div className="flex justify-center">
-        <a className="mr-4" href="https://discord.gg/PVeQeRdXYT" target="_blank" rel="noreferrer noopener">
+        <a
+          className="mr-4"
+          href="https://discord.gg/PVeQeRdXYT"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Image
             src="/assets/footer/discord.jpg"
             alt="Discord"
@@ -66,7 +77,11 @@ const Header = () => (
             height="32"
           />
         </a>
-        <a href="https://twitter.com/RumbleKongs" target="_blank" rel="noreferrer noopener">
+        <a
+          href="https://twitter.com/RumbleKongs"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Image
             src="/assets/footer/twitter.png"
             alt="Twitter"
@@ -80,37 +95,37 @@ const Header = () => (
       <div className="md:hidden">
         <Menu right>
           <a
-            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:underline"
+            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
             href="#about"
           >
             ABOUT
           </a>
           <a
-            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:underline"
+            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
             href="#mint"
           >
             MINT
           </a>
           <a
-            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:underline"
+            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
             href="#game"
           >
             GAME
           </a>
           <a
-            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:underline"
+            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
             href="#team"
           >
             TEAM
           </a>
           <a
-            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:underline"
+            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
             href="#roadmap"
           >
             ROADMAP
           </a>
           <a
-            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:underline"
+            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
             href="#provenance"
           >
             PROVENANCE

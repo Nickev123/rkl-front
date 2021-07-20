@@ -17,7 +17,15 @@ module.exports = {
       },
       fontFamily: {
         sans: ["strasua", "Source Sans Pro", "sans-serif"],
-        serif: ["Source Serif Pro", "serif"],
+        serif: [
+          "PT Serif",
+          "ui-serif",
+          "Georgia",
+          "Cambria",
+          "Times New Roman",
+          "Times",
+          "serif",
+        ],
       },
       spacing: {
         "2p": "2%",

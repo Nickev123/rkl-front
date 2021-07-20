@@ -6,17 +6,14 @@ import Image from "next/image";
 const Game = () => (
   <div
     id="game"
-    className="flex flex-col items-center justify-center px-5p text-white mb-8"
+    className="flex flex-col items-center justify-center px-5p text-white "
   >
     <div className="w-12/12 md:w-10/12 flex flex-col justify-center flex-wrap">
       {/* Game Content */}
-      <div
-        className="mt-8 flex flex-col justify-between text-center"
-        data-aos="fade"
-      >
-        <h2 className="font-sans mb-3 mt-8 text-3xl text-yellowColor">The Game</h2>
-        <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center"></div>
-        <h4 className="font-serif text-justify text-white text-sm md:text-xl">
+      <div className=" flex flex-col justify-between" data-aos="fade">
+        <h2 className="font-sans mb-3  text-3xl yl-400">The Game</h2>
+        <div className="w-20 h-0.5 bg-yellow-400 "></div>
+        <h4 className="font-serif text-justify text-white text-sm md:text-2xl mt-8 mb-8">
           The core gameplay of the Rumble Kong League will evolve around
           exciting 3 versus 3 basketball matches, combining proven gameplay and
           play-to-earn mechanics. Compete with and against other real users and
@@ -39,12 +36,10 @@ const Game = () => (
           in the coming weeks.
         </h4>
       </div>
-
     </div>
 
-    {/* White Seperator */}
     <div
-      className="w-10/12 h-0.5 bg-offwhite mt-24 mb-4 hidden 0xl:block"
+      className="w-10/12 h-0.5 bg-offwhite hidden 0xl:block mb-8"
       data-aos="fade"
     ></div>
   </div>

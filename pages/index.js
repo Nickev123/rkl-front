@@ -14,6 +14,12 @@ const Index = () => (
   <>
     <Head>
       <link href="https://fonts.cdnfonts.com/css/strasua" rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
+        rel="stylesheet"
+      />
       <title>RUMBLE KONG LEAGUE</title>
     </Head>
 
@@ -23,6 +29,7 @@ const Index = () => (
     <Game />
     <Team />
     <Roadmap />
+    <Provenance />
     <Footer />
 
     {/* <Overlay/> */}

@@ -3,11 +3,11 @@ import React from "react";
 // Overlay Component
 // ------------------------------------------------------------------------------------------------------- //
 const Overlay = () => (
-  <div className="mt-20 mb-8 0xl:mb-36 flex flex-col justify-between items-center text-center px-5p">
+  <div className="bg-yellow-400  0xl:mb-36 flex flex-col justify-between items-center text-center px-5p">
     {/* Overlay Content */}
     <h2 className="font-sans mb-3 text-7xl">HEADER</h2>
-    <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center"></div>
-    <h4 className="font-sans text-grayColor2 text-xl w-3/4 sm:w-1/2">
+    <div className="w-20 h-0.5 bg-yellow-400  self-center"></div>
+    <h4 className="font-sans text-grayColor2 text-2xl w-3/4 sm:w-1/2">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -29,14 +29,16 @@ const Overlay = () => (
         </div>
       </div>
 
-      <div className="mx-8 mt-8 sm:mt-0 w-full text-center">
+      <div className="mx-8  sm:mt-0 w-full text-center">
         <a href="#">
-          <button className="yellow-button h-16 w-40 ml-8 text-xl">MINT</button>
+          <button className="yellow-button h-16 w-40 ml-8 text-2xl">
+            MINT
+          </button>
         </a>
       </div>
     </div>
 
-    <h4 className="font-sans text-white text-xl my-8 w-3/4 sm:w-1/2">
+    <h4 className="font-sans text-white text-2xl bg-yellow-400 w-3/4 sm:w-1/2">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do{" "}
     </h4>
   </div>

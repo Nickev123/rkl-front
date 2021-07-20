@@ -29,7 +29,7 @@
 
 @layer components {
   .yellow-button {
-    @apply h-8 sm:h-12 w-24 sm:w-36 bg-yellowColor text-black font-semibold text-sm sm:text-xl;
+    @apply h-8 sm:h-12 w-24 sm:w-36 bg-yellow-400 text-black font-semibold text-sm sm:text-2xl;
   }
 }
 
@@ -93,24 +93,29 @@
   top: 0;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: black;
-  background: yellow;
+  background: rgba(251, 191, 36, 1);
 }
 
 ::selection {
   color: black;
-  background: yellow;
+  background: rgba(251, 191, 36, 1);
 }
 
-@media (max-width: 768px) { 
-  #banner-desktop{
-      display: none;
+@media (max-width: 768px) {
+  #banner-desktop {
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
-  #banner-mobile{
+  #banner-mobile {
     height: 40vmax;
   }
+}
+
+.yl-400 {
+  color: rgba(251, 191, 36, 1);
 }

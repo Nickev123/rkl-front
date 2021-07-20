@@ -44,7 +44,7 @@ const Footer = () => (
           TEAM
         </a>
         <a
-          className="px-2 xl:px-3 pt-1 mt-4 mb-12 lg:my-0 inline-flex items-end hover:underline"
+          className="px-2 xl:px-3 pt-1  mb-12 lg:my-0 inline-flex items-end hover:underline"
           href="#roadmap"
         >
           ROADMAP
@@ -53,7 +53,12 @@ const Footer = () => (
 
       {/* Social Links */}
       <div className="flex justify-center">
-        <a className="mr-4" href="https://discord.gg/PVeQeRdXYT" target="_blank" rel="noreferrer noopener">
+        <a
+          className="mr-4"
+          href="https://discord.gg/PVeQeRdXYT"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Image
             src="/assets/footer/discord.jpg"
             alt="Discord"
@@ -61,7 +66,11 @@ const Footer = () => (
             height="32"
           />
         </a>
-        <a href="https://twitter.com/RumbleKongs" target="_blank" rel="noreferrer noopener">
+        <a
+          href="https://twitter.com/RumbleKongs"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <Image
             src="/assets/footer/twitter.png"
             alt="Twitter"
@@ -72,7 +81,7 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="mt-8 pb-8 text-center lg:ml-36 lg:text-left font-sans text-grayColor3">
+    <div className=" pb-8 text-center lg:ml-36 lg:text-left font-sans text-grayColor3">
       Ⓒ 2021, RUMBLE KONG LEAGUE, ALL RIGHTS RESERVED
     </div>
   </footer>

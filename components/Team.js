@@ -4,16 +4,16 @@ import Image from "next/image";
 // Team Component
 // ------------------------------------------------------------------------------------------------------- //
 const Team = () => (
-  <div id="team" className="flex flex-col items-center px-5p text-white mb-8">
-    <div className="w-10/12 flex flex-col flex-wrap">
-      {/* Team Content */}
-      <div
-        className="mt-4 mb-16 flex flex-col justify-between text-center xl:text-left"
-        data-aos="fade"
-      >
-        <h2 className="font-sans mb-3 text-3xl text-yellowColor">The Team</h2>
-        <div className="w-20 h-0.5 bg-yellowColor mb-8 self-center xl:self-start"></div>
-        <h4 className="font-serif text-white text-sm md:text-xl">
+  <div
+    id="game"
+    className="flex flex-col items-center justify-center px-5p text-white "
+  >
+    <div className="w-12/12 md:w-10/12 flex flex-col justify-center flex-wrap">
+      {/* Game Content */}
+      <div className=" flex flex-col justify-between" data-aos="fade">
+        <h2 className="font-sans mb-3  text-3xl yl-400">The Teamm</h2>
+        <div className="w-20 h-0.5 bg-yellow-400 self-start"></div>
+        <h4 className="font-serif text-white text-sm md:text-2xl mt-8 mb-8">
           Meet the team bringing you the rumble
         </h4>
       </div>
@@ -21,7 +21,6 @@ const Team = () => (
       {/* Team Images */}
       <div className="flex text-center justify-center xl:justify-between flex-wrap">
         <div
-          className="mx-8 mb-8"
           data-aos="fade-right"
           data-aos-delay="200"
           // data-aos-anchor-placement="center-bottom"
@@ -33,9 +32,7 @@ const Team = () => (
             width="164"
             height="164"
           />
-          <div className="font-sans text-xl mt-6 text-yellowColor2">
-            direkkt
-          </div>
+          <div className="font-sans text-2xl mt-6 yl-400">direkkt</div>
           <span className="text-white font-semibold text-sm w-64 mx-auto">
             Visionary
           </span>
@@ -59,6 +56,7 @@ const Team = () => (
               href="https://twitter.com/direkkt"
               target="_blank"
               rel="noreferrer noopener"
+              className="mb-4"
             >
               <Image
                 src="/assets/team/twitter.png"
@@ -71,7 +69,7 @@ const Team = () => (
         </div>
 
         <div
-          className="mx-8 mb-8"
+          className="mx-8 "
           data-aos="fade-right"
           data-aos-delay="200"
           // data-aos-anchor-placement="center-bottom"
@@ -83,9 +81,7 @@ const Team = () => (
             width="164"
             height="164"
           />
-          <div className="font-sans text-xl mt-6 text-yellowColor2">
-            Sickpencil
-          </div>
+          <div className="font-sans text-2xl mt-6 yl-400">Sickpencil</div>
           <span className="text-white font-semibold text-sm w-64 mx-auto">
             Artist
           </span>
@@ -109,6 +105,7 @@ const Team = () => (
               href="https://twitter.com/sickpencil"
               target="_blank"
               rel="noreferrer noopener"
+              className="mb-4"
             >
               <Image
                 src="/assets/team/twitter.png"
@@ -121,7 +118,7 @@ const Team = () => (
         </div>
 
         <div
-          className="mx-8 mb-8"
+          className="mx-8 "
           data-aos="fade-right"
           data-aos-delay="200"
           // data-aos-anchor-placement="center-bottom"
@@ -133,7 +130,7 @@ const Team = () => (
             width="164"
             height="164"
           />
-          <div className="font-sans text-xl mt-6 text-yellowColor2">Naz</div>
+          <div className="font-sans text-2xl mt-6 yl-400">Naz</div>
           <span className="text-white font-semibold text-sm w-64 mx-auto">
             Tech
           </span>
@@ -157,6 +154,7 @@ const Team = () => (
               href="https://twitter.com/AlgorithmicBot"
               target="_blank"
               rel="noreferrer noopener"
+              className="mb-4"
             >
               <Image
                 src="/assets/team/twitter.png"
@@ -169,7 +167,7 @@ const Team = () => (
         </div>
 
         <div
-          className="mx-8 mb-8"
+          className="mx-8 "
           data-aos="fade-right"
           data-aos-delay="200"
           // data-aos-anchor-placement="center-bottom"
@@ -181,7 +179,7 @@ const Team = () => (
             width="164"
             height="164"
           />
-          <div className="font-sans text-xl mt-6 text-yellowColor2">Nickev</div>
+          <div className="font-sans text-2xl mt-6 yl-400">Nickev</div>
           <span className="text-white font-semibold text-sm w-64 mx-auto">
             Marketing
           </span>
@@ -205,6 +203,7 @@ const Team = () => (
               href="https://twitter.com/nickev123"
               target="_blank"
               rel="noreferrer noopener"
+              className="mb-4"
             >
               <Image
                 src="/assets/team/twitter.png"
@@ -219,7 +218,7 @@ const Team = () => (
 
       {/* Mint Button */}
       {/* <div
-        className="mt-8 text-center"
+        className=" text-center"
         data-aos="fade-right"
         data-aos-delay="200"
         data-aos-anchor-placement="center-bottom"
@@ -230,9 +229,8 @@ const Team = () => (
       </div> */}
     </div>
 
-    {/* White Seperator */}
     <div
-      className="w-10/12 h-0.5 bg-offwhite mt-12 mb-4 hidden 0xl:block"
+      className="w-10/12 h-0.5 bg-offwhite hidden 0xl:block mt-8 mb-8"
       data-aos="fade"
     ></div>
   </div>
