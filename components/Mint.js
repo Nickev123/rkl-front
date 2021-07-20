@@ -81,7 +81,7 @@ const Mint = () => (
       <div className="w-12/12 md:w-6/12" style={{ display: "inline-block" }}>
         <div>
           <h2 className="font-sans mb-3 text-3xl yl-400 mt-8">
-            Commitment to Quality
+            Commitment to Quality 
           </h2>
           <div className="w-20 h-0.5 bg-yellow-400 "></div>
           <h4 className="font-serif text-justify text-white text-sm md:text-2xl mt-8 mb-8">
