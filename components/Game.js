@@ -52,7 +52,7 @@ const Game = () => (
       </div>
       <div className="flex text-center justify-center xl:justify-between flex-wrap mb-12">
         <div
-          className="mr-4 mb-4"
+          className="mr-4 mb-4 mt-16"
           data-aos="fade-right"
           data-aos-delay="200"
           data-aos-anchor-placement="center-bottom"
@@ -74,7 +74,7 @@ const Game = () => (
         </div>
 
         <div
-          className="mr-4 mb-4"
+          className="mr-4 mb-4 mt-16"
           data-aos="fade-right"
           data-aos-delay="200"
           data-aos-anchor-placement="center-bottom"
@@ -96,7 +96,7 @@ const Game = () => (
         </div>
 
         <div
-          className="mr-4 mb-4"
+          className="mr-4 mb-4 mt-16"
           data-aos="fade-left"
           data-aos-delay="200"
           data-aos-anchor-placement="center-bottom"
@@ -118,6 +118,7 @@ const Game = () => (
         </div>
 
         <div
+          className="mt-16"
           data-aos="fade-left"
           data-aos-delay="200"
           data-aos-anchor-placement="center-bottom"
