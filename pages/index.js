@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
+import { Web3ReactProvider } from "@web3-react/core";
+import { Web3Provider } from "@ethersproject/providers";
+
 import Header from "../components/Header";
 import About from "../components/About";
 import Mint from "../components/Mint";
@@ -8,11 +11,16 @@ import Team from "../components/Team";
 import Roadmap from "../components/Roadmap";
 import Provenance from "../components/Provenance";
 import Footer from "../components/Footer";
-// import Overlay from '../components/Overlay';
+
+const getLibrary = (provider) => {
+  const library = new Web3Provider(provider);
+  library.pollingInterval = 12000;
+  return library;
+};
 
 const Index = () => {
   return (
-    <>
+    <Web3ReactProvider getLibrary={getLibrary}>
       <Head>
         <link href="https://fonts.cdnfonts.com/css/strasua" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +31,6 @@ const Index = () => {
         />
         <title>RUMBLE KONG LEAGUE</title>
       </Head>
-
       <Header />
       <About />
       <Mint />
@@ -32,9 +39,7 @@ const Index = () => {
       <Roadmap />
       <Provenance />
       <Footer />
-
-      {/* <Overlay/> */}
-    </>
+    </Web3ReactProvider>
   );
 };
 
