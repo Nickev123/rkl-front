@@ -1,89 +1,26 @@
-import React, { useEffect, useState } from "react";
-// import { useWeb3Context } from "web3-react";
-import { useWeb3React } from "@web3-react/core";
+import React, { useState } from "react";
 import Image from "next/image";
+import { useWeb3React } from "@web3-react/core";
 import { slide as Menu } from "react-burger-menu";
-import { Web3Provider } from "@ethersproject/providers";
 
 import Modal from "../components/Modal";
 
-import { useEagerConnect, useInactiveListener } from "../hooks";
-import {
-  injected,
-  network,
-  walletconnect,
-  walletlink,
-  ledger,
-  trezor,
-  lattice,
-  frame,
-  authereum,
-  fortmatic,
-  magic,
-  portis,
-  torus,
-} from "../connectors";
-import { Spinner } from "./Spinner";
-
-var ConnectorNames;
-(function (ConnectorNames) {
-  ConnectorNames["Injected"] = "Injected";
-  ConnectorNames["Network"] = "Network";
-  ConnectorNames["WalletConnect"] = "WalletConnect";
-  ConnectorNames["WalletLink"] = "WalletLink";
-  ConnectorNames["Ledger"] = "Ledger";
-  ConnectorNames["Trezor"] = "Trezor";
-  ConnectorNames["Lattice"] = "Lattice";
-  ConnectorNames["Frame"] = "Frame";
-  ConnectorNames["Authereum"] = "Authereum";
-  ConnectorNames["Fortmatic"] = "Fortmatic";
-  ConnectorNames["Magic"] = "Magic";
-  ConnectorNames["Portis"] = "Portis";
-  ConnectorNames["Torus"] = "Torus";
-})(ConnectorNames || (ConnectorNames = {}));
-
-const connectorsByName = {
-  [ConnectorNames.Injected]: injected,
-  [ConnectorNames.Network]: network,
-  [ConnectorNames.WalletConnect]: walletconnect,
-  [ConnectorNames.WalletLink]: walletlink,
-  [ConnectorNames.Ledger]: ledger,
-  [ConnectorNames.Trezor]: trezor,
-  [ConnectorNames.Lattice]: lattice,
-  [ConnectorNames.Frame]: frame,
-  [ConnectorNames.Authereum]: authereum,
-  [ConnectorNames.Fortmatic]: fortmatic,
-  [ConnectorNames.Magic]: magic,
-  [ConnectorNames.Portis]: portis,
-  [ConnectorNames.Torus]: torus,
-};
-
-function getErrorMessage(error) {
-  if (error instanceof NoEthereumProviderError) {
-    return "No Ethereum browser extension detected, install MetaMask on desktop or visit from a dApp browser on mobile.";
-  } else if (error instanceof UnsupportedChainIdError) {
-    return "You're connected to an unsupported network.";
-  } else if (
-    error instanceof UserRejectedRequestErrorInjected ||
-    error instanceof UserRejectedRequestErrorWalletConnect ||
-    error instanceof UserRejectedRequestErrorFrame
-  ) {
-    return "Please authorize this website to access your Ethereum account.";
-  } else {
-    console.error(error);
-    return "An unknown error occurred. Check the console for more details.";
-  }
-}
-
-function getLibrary(provider) {
-  const library = new Web3Provider(provider);
-  library.pollingInterval = 12000;
-  return library;
-}
+export const short = (s) => `${s.substr(0, 7)}...${s.substr(s.length - 3, 3)}`;
 
 // Header Component
 // ------------------------------------------------------------------------------------------------------- //
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  // handle logic to eagerly connect to the injected ethereum provider, if it exists and has granted access already
+  // const triedEager = useEagerConnect();
+
+  // if (!context.active && !context.error) {
+  //   return <Spinner />;
+  // } else if (context.error) {
+  //   return <div>Error..</div>;
+  // } else {
+
   const context = useWeb3React();
   const {
     connector,
@@ -95,26 +32,6 @@ const Header = () => {
     active,
     error,
   } = context;
-
-  const [open, setOpen] = useState(false);
-
-  // handle logic to recognize the connector currently being activated
-  const [activatingConnector, setActivatingConnector] = useState();
-
-  useEffect(() => {
-    if (activatingConnector && activatingConnector === connector) {
-      setActivatingConnector(undefined);
-    }
-  }, [activatingConnector, connector]);
-
-  // handle logic to eagerly connect to the injected ethereum provider, if it exists and has granted access already
-  // const triedEager = useEagerConnect();
-
-  // if (!context.active && !context.error) {
-  //   return <Spinner />;
-  // } else if (context.error) {
-  //   return <div>Error..</div>;
-  // } else {
 
   return (
     <>
@@ -194,7 +111,17 @@ const Header = () => {
           </a>
         </div>
 
-        <div onClick={() => setOpen(true)}>
+        <div
+          style={{ display: active ? "block" : "none" }}
+          className="ml-2 mr-2"
+        >
+          {short(account ? account : "")}
+        </div>
+
+        <div
+          onClick={() => setOpen(true)}
+          style={{ display: active ? "none" : "block" }}
+        >
           <button className="h-14 text-2xl ml-2 mr-2 hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-white-400 rounded shadow">
             Connect
           </button>

@@ -1,7 +1,83 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Dialog, Transition } from "@headlessui/react";
+// import { Web3Provider } from "@ethersproject/providers";
+import { useWeb3React } from "@web3-react/core";
+// import { useEagerConnect, useInactiveListener } from "../hooks";
+import {
+  injected,
+  network,
+  walletconnect,
+  walletlink,
+  ledger,
+  trezor,
+  lattice,
+  frame,
+  authereum,
+  fortmatic,
+  magic,
+  portis,
+  torus,
+} from "../connectors";
+
+var ConnectorNames;
+(function (ConnectorNames) {
+  ConnectorNames["Injected"] = "Injected";
+  ConnectorNames["Network"] = "Network";
+  ConnectorNames["WalletConnect"] = "WalletConnect";
+  ConnectorNames["WalletLink"] = "WalletLink";
+  ConnectorNames["Ledger"] = "Ledger";
+  ConnectorNames["Trezor"] = "Trezor";
+  ConnectorNames["Lattice"] = "Lattice";
+  ConnectorNames["Frame"] = "Frame";
+  ConnectorNames["Authereum"] = "Authereum";
+  ConnectorNames["Fortmatic"] = "Fortmatic";
+  ConnectorNames["Magic"] = "Magic";
+  ConnectorNames["Portis"] = "Portis";
+  ConnectorNames["Torus"] = "Torus";
+})(ConnectorNames || (ConnectorNames = {}));
+
+const connectorsByName = {
+  [ConnectorNames.Injected]: injected,
+  [ConnectorNames.Network]: network,
+  [ConnectorNames.WalletConnect]: walletconnect,
+  [ConnectorNames.WalletLink]: walletlink,
+  [ConnectorNames.Ledger]: ledger,
+  [ConnectorNames.Trezor]: trezor,
+  [ConnectorNames.Lattice]: lattice,
+  [ConnectorNames.Frame]: frame,
+  [ConnectorNames.Authereum]: authereum,
+  [ConnectorNames.Fortmatic]: fortmatic,
+  [ConnectorNames.Magic]: magic,
+  [ConnectorNames.Portis]: portis,
+  [ConnectorNames.Torus]: torus,
+};
 
 export default function Modal({ open, setOpen }) {
+  const context = useWeb3React();
+  const {
+    connector,
+    library,
+    chainId,
+    account,
+    activate,
+    deactivate,
+    active,
+    error,
+  } = context;
+
+  // handle logic to recognize the connector currently being activated
+  const [activatingConnector, setActivatingConnector] = useState();
+
+  useEffect(() => {
+    if (activatingConnector && activatingConnector === connector) {
+      setActivatingConnector(undefined);
+    }
+  }, [activatingConnector, connector]);
+
+  if (active) {
+    return <></>;
+  }
+
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog
@@ -42,38 +118,93 @@ export default function Modal({ open, setOpen }) {
           >
             <div className="text-black text-center inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-center overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-6xl sm:w-full sm:p-6">
               <div className="sm:grid sm:grid-cols-3 sm:gap-3 sm:grid-flow-row-dense">
-                <button className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow">
-                  Metamask / Browser
+                <button
+                  onClick={() => {
+                    setActivatingConnector(
+                      connectorsByName[ConnectorNames.Injected]
+                    );
+                    activate(connectorsByName[ConnectorNames.Injected]);
+                  }}
+                  className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow"
+                >
+                  Metamask
                 </button>
-                <button className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow">
-                  Walletconnect
+                <button
+                  onClick={() => {
+                    setActivatingConnector(
+                      connectorsByName[ConnectorNames.WalletConnect]
+                    );
+                    activate(connectorsByName[ConnectorNames.WalletConnect]);
+                  }}
+                  className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow"
+                >
+                  WalletConnect
                 </button>
-                <button className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow">
-                  Walletlink
+                <button
+                  onClick={() => {
+                    setActivatingConnector(
+                      connectorsByName[ConnectorNames.WalletLink]
+                    );
+                    activate(connectorsByName[ConnectorNames.WalletLink]);
+                  }}
+                  className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow"
+                >
+                  WalletLink
                 </button>
-                <button className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow">
+                <button
+                  onClick={() => {
+                    setActivatingConnector(
+                      connectorsByName[ConnectorNames.Ledger]
+                    );
+                    activate(connectorsByName[ConnectorNames.Ledger]);
+                  }}
+                  className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow"
+                >
                   Ledger
                 </button>
-                <button className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow">
+                <button
+                  onClick={() => {
+                    setActivatingConnector(
+                      connectorsByName[ConnectorNames.Trezor]
+                    );
+                    activate(connectorsByName[ConnectorNames.Trezor]);
+                  }}
+                  className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow"
+                >
                   Trezor
                 </button>
-                <button className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow">
+                <button
+                  onClick={() => {
+                    setActivatingConnector(
+                      connectorsByName[ConnectorNames.Lattice]
+                    );
+                    activate(connectorsByName[ConnectorNames.Lattice]);
+                  }}
+                  className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow"
+                >
                   Lattice
                 </button>
-                <button className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow">
-                  Frame
-                </button>
-                <button className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow">
+                <button
+                  onClick={() => {
+                    setActivatingConnector(
+                      connectorsByName[ConnectorNames.Authereum]
+                    );
+                    activate(connectorsByName[ConnectorNames.Authereum]);
+                  }}
+                  className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow"
+                >
                   Authereum
                 </button>
-                <button className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow">
+                <button
+                  onClick={() => {
+                    setActivatingConnector(
+                      connectorsByName[ConnectorNames.Fortmatic]
+                    );
+                    activate(connectorsByName[ConnectorNames.Fortmatic]);
+                  }}
+                  className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow"
+                >
                   Fortmatic
-                </button>
-                <button className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow">
-                  Magic
-                </button>
-                <button className="h-14 mb-12 text-2xl hover:bg-yellow-400 text-white-800 font-semibold py-2 px-4 border border-black rounded shadow">
-                  Portis
                 </button>
               </div>
             </div>

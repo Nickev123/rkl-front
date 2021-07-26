@@ -325,7 +325,7 @@ const Provenance = () => (
                 </thead>
                 <tbody className="bg-black divide-y divide-white">
                   {provenance.map((p) => (
-                    <tr key={p.new_ix}>
+                    <tr key={p.old_ix}>
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">
                         {p.old_ix}
                       </td>
