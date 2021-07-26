@@ -1,14 +1,5 @@
 import React from "react";
-
-const provenance = [
-  {
-    old_ix: "6888",
-    new_ix: 0,
-    sha256: "e282460928cdaa64ae41f83594ec9fc33c2e214011820abe369214dd692c4db9",
-    ipfs: "QmVEh59eQkLmtcTt2cq1UR1w9VsQu93izMgRxMByLKkGAK",
-    arweave: 0,
-  },
-];
+import { provenance } from "./ipfs_hashes";
 
 export const short = (s) => `${s.substr(0, 7)}...${s.substr(s.length - 3, 3)}`;
 
@@ -25,16 +16,16 @@ const Provenance = () => (
     <div className="flex flex-col text-left font-serif mb-8">
       <p>
         <span className="font-sans">
-          <b>OLD IX</b>
+          <b>OG IX</b>
         </span>{" "}
         - original index of the generated Rumble Kong
       </p>
       <p>
         <span className="font-sans">
-          <b>NEW IX</b>
+          <b>IX</b>
         </span>{" "}
         - after the sell out or after a day (whichever is the soonest), a random
-        starting index is generated. <b>NEW IX = (OLD IX mod STARTING IX)</b>
+        starting index is generated. <b>IX = (OLD IX mod STARTING IX)</b>
       </p>
       <p>
         <span className="font-sans">
@@ -71,13 +62,13 @@ const Provenance = () => (
                       scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider"
                     >
-                      old ix
+                      og ix
                     </th>
                     <th
                       scope="col"
                       className="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider"
                     >
-                      new ix
+                      ix
                     </th>
                     <th
                       scope="col"
@@ -102,17 +93,26 @@ const Provenance = () => (
                 <tbody className="bg-black divide-y divide-white">
                   {provenance.map((p) => (
                     <tr key={p.old_ix}>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-white">
+                      <td
+                        style={{ width: "10px" }}
+                        className="px-6 py-4 whitespace-nowrap text-sm font-medium text-white"
+                      >
                         {p.old_ix}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-white">
+                      <td
+                        style={{ width: "10px" }}
+                        className="px-6 py-4 whitespace-nowrap text-sm text-white"
+                      >
                         {p.new_ix}
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-sm text-white">
-                        {short(p.sha256)}
+                      <td
+                        style={{ width: "100px" }}
+                        className="px-6 py-4 whitespace-nowrap text-sm text-white"
+                      >
+                        {p.sha256}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-white">
-                        {short(p.ipfs)}
+                        {p.ipfs}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-white">
                         {p.arweave}
