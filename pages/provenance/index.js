@@ -25,7 +25,8 @@ const Provenance = () => (
           <b>IX</b>
         </span>{" "}
         - after the sell out or after a day (whichever is the soonest), a random
-        starting index is generated. <b>IX = (OLD IX mod STARTING IX)</b>
+        starting index is generated.{" "}
+        <b>IX = (OG IX + startingIndex) MOD 10000</b>
       </p>
       <p>
         <span className="font-sans">
