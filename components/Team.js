@@ -107,7 +107,7 @@ const Team = () => (
           <div className="font-serif text-grayColor2 w-64 mx-auto text-justify">
             <span className="font-serif text-jusitfy text-grayColor3 font-semibold text-xs">
               reNFT tech co-founder, first peer-to-peer ERC-721 and ERC-1155
-              lending / renting protocol...
+              lending / renting protocol
               <br />
               <br />
             </span>
