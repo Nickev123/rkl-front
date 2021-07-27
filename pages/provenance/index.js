@@ -6,7 +6,7 @@ export const short = (s) => `${s.substr(0, 7)}...${s.substr(s.length - 3, 3)}`;
 const Provenance = () => (
   <div
     id="provenance"
-    className="flex flex-col items-center justify-center px-5p text-white mb-16"
+    className="flex flex-col items-center justify-center px-5p text-white mb-16 mt-16"
   >
     <div className="flex flex-col justify-between text-center" data-aos="fade">
       <h2 className="font-sans mb-2  text-3xl yl-400 mb-3">Provenance</h2>

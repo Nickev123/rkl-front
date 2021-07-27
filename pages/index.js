@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 import { Web3ReactProvider } from "@web3-react/core";
 import { Web3Provider } from "@ethersproject/providers";
@@ -9,7 +9,6 @@ import Mint from "../components/Mint";
 import Game from "../components/Game";
 import Team from "../components/Team";
 import Roadmap from "../components/Roadmap";
-import Provenance from "../components/Provenance";
 import Footer from "../components/Footer";
 
 const getLibrary = (provider) => {
@@ -37,7 +36,6 @@ const Index = () => {
       <Game />
       <Team />
       <Roadmap />
-      <Provenance />
       <Footer />
     </Web3ReactProvider>
   );

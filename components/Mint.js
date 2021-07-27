@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 // Mint Component
 // ------------------------------------------------------------------------------------------------------- //
@@ -8,12 +9,6 @@ const Mint = () => (
     id="mint"
     className="flex flex-col items-center justify-center px-5p text-white"
   >
-    {/* <div className=" block 0xl:hidden text-center">
-        <a href="#">
-          <button className="yellow-button">&nbsp;JOIN DISCORD&nbsp;</button>
-        </a>
-      </div> */}
-
     <a
       href="https://discord.gg/PVeQeRdXYT"
       target="_blank"
@@ -24,8 +19,45 @@ const Mint = () => (
       </button>
     </a>
 
-    <div className="w-10/12 h-0.5 bg-offwhite bg-yellow-400  hidden 0xl:block"></div>
+    <h2 className="font-sans mb-3 text-3xl yl-400 mt-8">Mint Launchpad</h2>
+    <div className="w-20 h-0.5 bg-yellow-400"></div>
 
+    <div className="md:w-10/12 w-12/12 mt-8 mb-8">
+      <p className="text-sm mb-2">Minting progress</p>
+      <div className="px-10">
+        <ProgressBar completed={0} bgColor="#fabe24" />
+      </div>
+
+      <div
+        style={{ minWidth: "300px" }}
+        className="md:px-12 md:py-12 md:w-4/12 px-4 py-4 mx-auto w-12/12 mt-8 mb-4 border border-white-400 rounded shadow flex flex-col justify-center content-center"
+      >
+        <div className="flex flex-col mx-auto">
+          <label htmlFor="qty"># of Kongs to mint</label>
+          <p className="text-sm mb-2">20 max</p>
+          <input
+            style={{ width: "100px" }}
+            className="px-2 max-w-xs mb-2 text-black text-center mx-auto"
+            type="number"
+            min="1"
+            max="20"
+            id="qty"
+            name="qty"
+            placeholder="#"
+            disabled
+          />
+          <p>total mint cost: ETH</p>
+          <button
+            disabled
+            className="cursor-not-allowed mt-4 max-w-xs text-lg text-white-800 font-semibold border border-white-400 rounded shadow"
+          >
+            MINT
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div className="w-10/12 h-0.5 bg-offwhite bg-yellow-400  hidden 0xl:block"></div>
     <div className="w-12/12 md:w-10/12 flex justify-center 0xl:justify-between flex-wrap">
       <div className="flex flex-col justify-between">
         <div>
@@ -69,9 +101,7 @@ const Mint = () => (
         </a> */}
       </div>
     </div>
-
     <div className="w-10/12 h-0.5 bg-offwhite bg-yellow-400 hidden 0xl:block mb-8"></div>
-
     <div
       className="w-12/12 md:w-10/12"
       data-aos="fade-left"
@@ -81,7 +111,7 @@ const Mint = () => (
       <div className="w-12/12 md:w-6/12" style={{ display: "inline-block" }}>
         <div>
           <h2 className="font-sans mb-3 text-3xl yl-400 mt-8">
-            Commitment to Quality 
+            Commitment to Quality
           </h2>
           <div className="w-20 h-0.5 bg-yellow-400 "></div>
           <h4 className="font-serif text-justify text-white text-sm md:text-2xl mt-8 mb-8">
@@ -118,7 +148,6 @@ const Mint = () => (
         />
       </div>
     </div>
-
     {/* White Seperator */}
     <div
       className="w-10/12 h-0.5 bg-offwhite hidden 0xl:block mb-8 mt-8"

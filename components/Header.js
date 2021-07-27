@@ -76,7 +76,7 @@ const Header = () => {
           </a>
           <a
             className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
-            href="#provenance"
+            href="provenance"
           >
             PROVENANCE
           </a>
