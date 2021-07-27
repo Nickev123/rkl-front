@@ -54,13 +54,9 @@ export const lattice = new LatticeConnector({
   url: RPC_URLS[1],
 });
 
-// export const frame = new FrameConnector({ supportedChainIds: [1] });
-
 export const authereum = new AuthereumConnector({ chainId: 1 });
 
 export const fortmatic = new FortmaticConnector({
   apiKey: "pk_live_014C9A8BD3D47F53",
   chainId: 1,
 });
-
-// export const torus = new TorusConnector({ chainId: 1 });

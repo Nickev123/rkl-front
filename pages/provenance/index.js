@@ -1,5 +1,5 @@
 import React from "react";
-import { provenance } from "./ipfs_hashes";
+import { provenance } from "../../components/ipfs_hashes";
 
 export const short = (s) => `${s.substr(0, 7)}...${s.substr(s.length - 3, 3)}`;
 

@@ -11,12 +11,8 @@ import {
   ledger,
   trezor,
   lattice,
-  frame,
   authereum,
   fortmatic,
-  magic,
-  portis,
-  torus,
 } from "../connectors";
 
 var ConnectorNames;
@@ -44,12 +40,8 @@ const connectorsByName = {
   [ConnectorNames.Ledger]: ledger,
   [ConnectorNames.Trezor]: trezor,
   [ConnectorNames.Lattice]: lattice,
-  [ConnectorNames.Frame]: frame,
   [ConnectorNames.Authereum]: authereum,
   [ConnectorNames.Fortmatic]: fortmatic,
-  [ConnectorNames.Magic]: magic,
-  [ConnectorNames.Portis]: portis,
-  [ConnectorNames.Torus]: torus,
 };
 
 export default function Modal({ open, setOpen }) {
