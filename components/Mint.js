@@ -1,13 +1,23 @@
 import React, { useState, useCallback } from "react";
 import Image from "next/image";
 import ProgressBar from "@ramonak/react-progress-bar";
+import { useWeb3React } from "@web3-react/core";
+import { ethers, utils } from "ethers";
 
-// Mint Component
-// ------------------------------------------------------------------------------------------------------- //
+const rklAddress = "0x7232cfcdC68743f0020263142142ca5b56F62521";
+
+const abi = [
+  "function mintKong(uint256 numberOfTokens) external payable",
+  "function totalSupply() external returns (uint256)",
+];
+
 const Mint = () => {
+  const context = useWeb3React();
+  const { library } = context;
+
   const [val, setVal] = useState("0");
 
-  const handleChangeVal = (e) => {
+  const handleChangeVal = useCallback((e) => {
     const num = e.target.value;
     let intNum = 0;
     try {
@@ -21,6 +31,37 @@ const Mint = () => {
       true;
     }
     setVal(intNum);
+  }, []);
+
+  const getRklContract = () => {
+    if (!library) return null;
+    if (!library.getSigner()) return null;
+    return new ethers.Contract(rklAddress, abi, library.getSigner());
+  };
+
+  const mintKong = async () => {
+    try {
+      if (parseInt(val) > 20) {
+        return;
+      }
+      if (parseInt(val) < 1) {
+        return;
+      }
+    } catch (e) {
+      return;
+    }
+    const contract = getRklContract();
+
+    if (!contract) {
+      return;
+    }
+
+    // TODO: change to 0.08 ether
+    const totalCost = val * 0.01;
+
+    await contract.mintKong(String(val), {
+      value: utils.parseUnits(String(totalCost), "ether"),
+    });
   };
 
   return (
@@ -68,7 +109,10 @@ const Mint = () => {
               onFocus={handleChangeVal}
             />
             <p>total mint cost: ETH</p>
-            <button className="mt-4 max-w-xs text-lg text-white-800 font-semibold border border-white-400 rounded shadow">
+            <button
+              onClick={() => mintKong()}
+              className="mt-4 max-w-xs text-lg text-white-800 font-semibold border border-white-400 rounded shadow"
+            >
               MINT
             </button>
           </div>
@@ -176,7 +220,6 @@ const Mint = () => {
     </div>
   );
 };
-// ------------------------------------------------------------------------------------------------------- //
 
 Mint.displayName = "Mint";
 export default Mint;
