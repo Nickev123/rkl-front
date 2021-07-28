@@ -34,7 +34,7 @@ const Mint = () => {
 
   useEffect(() => {
     pullAndSetTotalSupply();
-  }, []);
+  }, [pullAndSetTotalSupply]);
 
   const handleChangeVal = useCallback((e) => {
     const num = e.target.value;
