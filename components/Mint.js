@@ -4,13 +4,14 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import { useWeb3React } from "@web3-react/core";
 import { ethers, utils } from "ethers";
 
+import usePoller from "../components/usePoller";
 import Notification from "../components/Notification";
 
 const rklAddress = "0xef0182dc0574cd5874494a120750fd222fdb909a";
 
 const abi = [
   "function mintKong(uint256 numberOfTokens) external payable",
-  "function totalSupply() external returns (uint256)",
+  "function totalSupply() external view returns (uint256)",
 ];
 
 const Mint = () => {
@@ -21,6 +22,15 @@ const Mint = () => {
   const [totalMint, setTotalMint] = useState(30);
   const [showConnectWallet, setShowConnectWallet] = useState(false);
   const [showMintError, setShowMintError] = useState(false);
+
+  const pullAndSetTotalSupply = useCallback(async () => {
+    if (!library) return;
+    const contract = getRklContractProvider();
+    const totalSupply = await contract.totalSupply();
+    setTotalMint(parseInt(totalSupply.toString()));
+  }, [library]);
+
+  usePoller(pullAndSetTotalSupply, 15_000);
 
   const handleChangeVal = useCallback((e) => {
     const num = e.target.value;
@@ -42,6 +52,12 @@ const Mint = () => {
     if (!library) return null;
     if (!library.getSigner()) return null;
     return new ethers.Contract(rklAddress, abi, library.getSigner());
+  };
+
+  const getRklContractProvider = () => {
+    if (!library) return null;
+    if (!library.provider) return null;
+    return new ethers.Contract(rklAddress, abi, library);
   };
 
   const mintKong = async () => {
