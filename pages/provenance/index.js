@@ -42,7 +42,11 @@ const Provenance = () => (
           </span>{" "}
           - after the sell out or after a day (whichever is the soonest), a
           random starting index is generated.{" "}
-          <b>IX = (OG IX + startingIndex) MOD 10000</b>
+          <b>OG IX = (IX + startingIndex) MOD 10000</b>
+          <br />
+          You can also show that assigned index is (og ix + tokenID) MOD
+          startingIndex for all og ix &#8805; startingIndex, and just tokenID
+          for all og ix &#60; startingIndex.
         </p>
         <p>
           <span className="font-sans">
