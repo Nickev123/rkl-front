@@ -46,6 +46,20 @@ const Provenance = () => (
         </span>{" "}
         - arweave data transaction ID
       </p>
+      <div>
+        <br />
+        RKL Provenance is computed by concatenating the sha256 hashes of the art
+        pieces in the <b>OG IX</b> order, and taking sha256 hash of the
+        <br />
+        concatenated <b>utf-8</b> encoded string. This value is: <br />
+        <div className="text-center">
+          <b>
+            7f8a31458635d2bd059dd45e72ce7ee53ba6fe4d9d85c089a5d28e17208021cc
+          </b>
+        </div>
+        <br />
+        This value has been set in the contract.
+      </div>
     </div>
 
     <div className="w-12/12 md:w-10/12 flex flex-col justify-center flex-wrap">
