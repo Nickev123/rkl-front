@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import Image from "next/image";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { useWeb3React } from "@web3-react/core";
@@ -19,7 +19,7 @@ const Mint = () => {
   const { library } = context;
 
   const [val, setVal] = useState("1");
-  const [totalMint, setTotalMint] = useState(30);
+  const [totalMint, setTotalMint] = useState(1840);
   const [showConnectWallet, setShowConnectWallet] = useState(false);
   const [showMintError, setShowMintError] = useState(false);
 
@@ -31,6 +31,10 @@ const Mint = () => {
   }, [library]);
 
   usePoller(pullAndSetTotalSupply, 15_000);
+
+  useEffect(() => {
+    pullAndSetTotalSupply();
+  }, []);
 
   const handleChangeVal = useCallback((e) => {
     const num = e.target.value;
@@ -128,10 +132,14 @@ const Mint = () => {
         <div className="w-20 h-0.5 bg-yellow-400"></div>
 
         <div className="md:w-10/12 w-12/12 mt-8 mb-8">
-          <p className="text-sm mb-2">Minting progress</p>
-          <div className="px-10">
-            <ProgressBar completed={totalMint / 100.0} bgColor="#fabe24" />
-          </div>
+          {library && (
+            <>
+              <p className="text-sm mb-2">Minting progress</p>
+              <div className="px-10">
+                <ProgressBar completed={totalMint / 100.0} bgColor="#fabe24" />
+              </div>
+            </>
+          )}
 
           <div
             style={{ minWidth: "300px" }}
