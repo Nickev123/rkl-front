@@ -19,6 +19,8 @@ const Mint = () => {
 
   const [val, setVal] = useState("1");
   const [totalMint, setTotalMint] = useState(30);
+  const [showConnectWallet, setShowConnectWallet] = useState(false);
+  const [showMintError, setShowMintError] = useState(false);
 
   const handleChangeVal = useCallback((e) => {
     const num = e.target.value;
@@ -51,24 +53,47 @@ const Mint = () => {
         return;
       }
     } catch (e) {
+      setShowMintError(true);
       return;
     }
+
     const contract = getRklContract();
 
     if (!contract) {
+      setShowConnectWallet(true);
       return;
     }
 
-    const totalCost = val * 0.08;
-
-    await contract.mintKong(String(val), {
-      value: utils.parseUnits(String(totalCost), "ether"),
-    });
+    try {
+      const totalCost = val * 0.08;
+      await contract.mintKong(String(val), {
+        value: utils.parseUnits(String(totalCost), "ether"),
+      });
+    } catch (e) {
+      setShowMintError(true);
+    }
   };
 
   return (
     <>
-      <Notification />
+      {showConnectWallet && (
+        <Notification
+          isSuccess={false}
+          title={"Connect wallet!"}
+          message={"Connect button is in the nav bar."}
+          show={showConnectWallet}
+          setShow={setShowConnectWallet}
+        />
+      )}
+      {showMintError && (
+        <Notification
+          isSuccess={false}
+          title={"Something went wrong!"}
+          message={"Please, try again later."}
+          show={showMintError}
+          setShow={setShowMintError}
+        />
+      )}
       <div
         id="mint"
         className="flex flex-col items-center justify-center px-5p text-white"
