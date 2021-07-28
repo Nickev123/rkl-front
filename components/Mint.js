@@ -4,7 +4,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import { useWeb3React } from "@web3-react/core";
 import { ethers, utils } from "ethers";
 
-const rklAddress = "0x7232cfcdC68743f0020263142142ca5b56F62521";
+const rklAddress = "0xef0182dc0574cd5874494a120750fd222fdb909a";
 
 const abi = [
   "function mintKong(uint256 numberOfTokens) external payable",
@@ -15,7 +15,8 @@ const Mint = () => {
   const context = useWeb3React();
   const { library } = context;
 
-  const [val, setVal] = useState("0");
+  const [val, setVal] = useState("1");
+  const [totalMint, setTotalMint] = useState(30);
 
   const handleChangeVal = useCallback((e) => {
     const num = e.target.value;
@@ -56,8 +57,7 @@ const Mint = () => {
       return;
     }
 
-    // TODO: change to 0.08 ether
-    const totalCost = val * 0.01;
+    const totalCost = val * 0.08;
 
     await contract.mintKong(String(val), {
       value: utils.parseUnits(String(totalCost), "ether"),
@@ -85,19 +85,18 @@ const Mint = () => {
       <div className="md:w-10/12 w-12/12 mt-8 mb-8">
         <p className="text-sm mb-2">Minting progress</p>
         <div className="px-10">
-          <ProgressBar completed={0} bgColor="#fabe24" />
+          <ProgressBar completed={totalMint / 100.0} bgColor="#fabe24" />
         </div>
 
         <div
           style={{ minWidth: "300px" }}
-          className="md:px-12 md:py-12 md:w-4/12 px-4 py-4 mx-auto w-12/12 mt-8 mb-4 border border-white-400 rounded shadow flex flex-col justify-center content-center"
+          className="md:px-12 md:py-12 md:w-3/12 px-4 py-4 mx-auto w-12/12 mt-8 mb-4 border border-white-400 rounded shadow flex flex-col justify-center content-center"
         >
           <div className="flex flex-col mx-auto">
-            <label htmlFor="qty"># of Kongs to mint</label>
-            <p className="text-sm mb-2">20 max</p>
+            <label htmlFor="qty" className="text-center"># of Kongs to mint</label>
             <input
               style={{ width: "100px" }}
-              className="px-2 max-w-xs mb-2 text-black text-center mx-auto"
+              className="px-2 max-w-xs mb-6 text-black text-center mx-auto"
               type="number"
               min="1"
               max="20"
@@ -108,10 +107,10 @@ const Mint = () => {
               onChange={handleChangeVal}
               onFocus={handleChangeVal}
             />
-            <p>total mint cost: ETH</p>
+            <p style={{width: "220px"}} className="text-center">total mint cost: {parseInt(val) * 0.08 ? parseInt(val) * 0.08 : "?"} ETH</p>
             <button
               onClick={() => mintKong()}
-              className="mt-4 max-w-xs text-lg text-white-800 font-semibold border border-white-400 rounded shadow"
+              className="max-w-xs text-lg hover:bg-yellow-400 text-white-800 font-semibold border border-white-400 rounded shadow"
             >
               MINT
             </button>
@@ -160,9 +159,6 @@ const Mint = () => {
               guaranteed via in-contract mechanisms.
             </h4>
           </div>
-          {/* <a className=" hidden 0xl:block" href="#">
-          <button className="yellow-button">MINT</button>
-        </a> */}
         </div>
       </div>
       <div className="w-10/12 h-0.5 bg-offwhite bg-yellow-400 hidden 0xl:block mb-8"></div>
