@@ -15,6 +15,7 @@ const Provenance = () => (
         href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
         rel="stylesheet"
       />
+      <title>RKL Provenance</title>
     </Head>
     <div
       id="provenance"
