@@ -96,7 +96,7 @@ const Mint = () => {
         <Notification
           isSuccess={false}
           title={"Connect wallet!"}
-          message={"Connect button is in the nav bar."}
+          message={"Connect button is in the nav bar ⬆️"}
           show={showConnectWallet}
           setShow={setShowConnectWallet}
         />
@@ -104,7 +104,7 @@ const Mint = () => {
       {showMintError && (
         <Notification
           isSuccess={false}
-          title={"Something went wrong!"}
+          title={"Something went wrong 💩!"}
           message={"Please, try again later."}
           show={showMintError}
           setShow={setShowMintError}
