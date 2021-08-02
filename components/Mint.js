@@ -250,10 +250,9 @@ const Mint = () => {
                 high-quality NFT derivatives and standalone NFT pieces. Rumble
                 Kongs are giving him the opportunity to express his creativity
                 to the fullest, by combining everyday basketball traits with
-                unique out-of-this-world designs. No two Kongs look alike, with
-                the visual being live on IPFS, as well as Arweave, ensuring
-                permanence of the art. In addition to that, owners will receive
-                a complete commercial licence to any owned Kong.
+                unique out-of-this-world designs. All the art is uploaded to
+                IPFS and Arweave for permanence. In addition to that, owners
+                will receive a complete commercial licence to any owned Kong.
               </h4>
             </div>
           </div>
