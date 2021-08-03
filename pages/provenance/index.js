@@ -49,6 +49,10 @@ const Provenance = () => (
           for all og ix &#60; startingIndex.
         </p>
         <p>
+          The starting index has been set by a member of community at{" "}
+          <b>8607</b>.
+        </p>
+        <p>
           <span className="font-sans">
             <b>SHA256</b>
           </span>{" "}
