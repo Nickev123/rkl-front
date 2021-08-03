@@ -128,6 +128,25 @@ const Mint = () => {
           </button>
         </a>
 
+        <a className="text-2xl">
+          We are <b>SOLD OUT</b>!
+        </a>
+
+        <a
+          className="mb-12 flex flex-row mt-2"
+          href="https://opensea.io/collection/rumble-kong-league"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <Image
+            src="/assets/opensea.png"
+            width={64}
+            height={64}
+            alt="opensea"
+          />
+          <div className="my-auto ml-4">Find us on OpenSea</div>
+        </a>
+
         {/* <h2 className="font-sans mb-3 text-3xl yl-400 mt-8">Mint Launchpad</h2>
         <div className="w-20 h-0.5 bg-yellow-400"></div> */}
 
