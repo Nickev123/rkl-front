@@ -128,10 +128,10 @@ const Mint = () => {
           </button>
         </a>
 
-        <h2 className="font-sans mb-3 text-3xl yl-400 mt-8">Mint Launchpad</h2>
-        <div className="w-20 h-0.5 bg-yellow-400"></div>
+        {/* <h2 className="font-sans mb-3 text-3xl yl-400 mt-8">Mint Launchpad</h2>
+        <div className="w-20 h-0.5 bg-yellow-400"></div> */}
 
-        <div className="md:w-10/12 w-12/12 mt-8 mb-8">
+        {/* <div className="md:w-10/12 w-12/12 mt-8 mb-8">
           {library && (
             <>
               <p className="text-sm mb-2">Minting progress</p>
@@ -174,7 +174,7 @@ const Mint = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="w-10/12 h-0.5 bg-offwhite bg-yellow-400  hidden 0xl:block"></div>
         <div className="w-12/12 md:w-10/12 flex justify-center 0xl:justify-between flex-wrap">

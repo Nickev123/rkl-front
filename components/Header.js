@@ -50,12 +50,12 @@ const Header = () => {
 
         {/* Navigation for Desktop */}
         <nav className="hidden md:inline-flex text-xs sm:text-sm md:text-base justify-evenly w-3/5 max-w-3/5 font-sans font-semibold flex-wrap 2xs:flex-nowrap">
-          <a
+          {/* <a
             className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
             href="#mint"
           >
             MINT
-          </a>
+          </a> */}
           <a
             className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
             href="#game"
@@ -136,12 +136,12 @@ const Header = () => {
             >
               ABOUT
             </a>
-            <a
+            {/* <a
               className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
               href="#mint"
             >
               MINT
-            </a>
+            </a> */}
             <a
               className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
               href="#game"
