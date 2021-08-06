@@ -10,6 +10,7 @@ import Game from "../components/Game";
 import Team from "../components/Team";
 import Roadmap from "../components/Roadmap";
 import Footer from "../components/Footer";
+import Sneakers from "../components/Sneakers";
 
 const getLibrary = (provider) => {
   const library = new Web3Provider(provider);
@@ -34,6 +35,7 @@ const Index = () => {
       <About />
       <Mint />
       <Game />
+      <Sneakers />
       <Team />
       <Roadmap />
       <Footer />

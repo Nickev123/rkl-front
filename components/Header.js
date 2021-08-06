@@ -64,6 +64,12 @@ const Header = () => {
           </a>
           <a
             className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
+            href="#sneakers"
+          >
+            SNEAKERS
+          </a>
+          <a
+            className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
             href="#team"
           >
             TEAM
@@ -147,6 +153,12 @@ const Header = () => {
               href="#game"
             >
               GAME
+            </a>
+            <a
+              className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
+              href="#sneakers"
+            >
+              SNEAKERS
             </a>
             <a
               className="px-2 xl:px-3 pt-1 inline-flex items-end hover:text-yellow-400"
