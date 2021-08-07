@@ -96,7 +96,7 @@ const Sneakers = () => {
       </div>
       <div>
         <p className="text-xl mt-8">
-          A snapshot of all kong holders who are eligible for the sneaker frop
+          A snapshot of all kong holders who are eligible for the sneaker drop
           will be taken on 06/08/2021 at 4 PM UTC
         </p>
       </div>
