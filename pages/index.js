@@ -33,9 +33,9 @@ const Index = () => {
       </Head>
       <Header />
       <About />
+      <Sneakers />
       <Mint />
       <Game />
-      <Sneakers />
       <Team />
       <Roadmap />
       <Footer />
