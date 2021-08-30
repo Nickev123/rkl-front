@@ -128,10 +128,6 @@ const Mint = () => {
           </button>
         </a>
 
-        <a className="text-2xl">
-          You can find us on OpenSea!
-        </a>
-
         <a
           className="mb-8 flex flex-row mt-2"
           href="https://opensea.io/collection/rumble-kong-league"
