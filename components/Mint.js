@@ -129,11 +129,11 @@ const Mint = () => {
         </a>
 
         <a className="text-2xl">
-          We are <b>SOLD OUT</b>!
+          You can find us on OpenSea!
         </a>
 
         <a
-          className="mb-12 flex flex-row mt-2"
+          className="mb-8 flex flex-row mt-2"
           href="https://opensea.io/collection/rumble-kong-league"
           target="_blank"
           rel="noreferrer noopener"
@@ -144,8 +144,12 @@ const Mint = () => {
             height={64}
             alt="opensea"
           />
-          <div className="my-auto ml-4">Find us on OpenSea</div>
+          <div className="my-auto ml-4">Find us on <a className="hover:text-yellow-400">OpenSea</a></div>
         </a>
+
+        <span className="text-2xl mb-12">
+          Read our <a href="/assets/kongpaper.pdf" target="_blank" rel="noreferrer noopener" className="hover:text-yellow-400 cursor-pointer">Kongpaper</a>
+        </span>
 
         {/* <h2 className="font-sans mb-3 text-3xl yl-400 mt-8">Mint Launchpad</h2>
         <div className="w-20 h-0.5 bg-yellow-400"></div> */}
